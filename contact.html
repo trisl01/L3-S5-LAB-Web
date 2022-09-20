@@ -25,6 +25,24 @@
       <main class="content">
         <h2>Contact Us:</h2>
         <form name="newForm" action="#" class="box" id="newForm" onsubmit="return false">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name:*</label>
+            <input type="text" name="firstName" maxlength="25" autocomplete="given-name" required><br>
+            <label>Last Name:*</label>
+            <input type="text" name="lastName" maxlength="25" autocomplete="family-name" required><br>
+            <label>Email:*</label>
+            <input type="email" name="email" maxlength="35" autocomplete="email" required><br>
+            <label>Please select the music genre(s) that you like:</label><br>
+            <input type="checkbox" name="classicCheck" id="classicCheck">
+            <label for="classicCheck">Classic</label><br>
+            <input type="checkbox" name="jazzCheck" id="jazzCheck">
+            <label for="jazzCheck">Jazz</label><br>
+            <input type="checkbox" name="bluesCheck" id="bluesCheck">
+            <label for="bluesCheck">Blues</label><br>
+            <input type="checkbox" name="instrumentalCheck" id="instrumentalCheck">
+            <label for="instrumentalCheck">Instrumental</label>
+          </fieldset>
         </form>
       </main>
       <footer>
