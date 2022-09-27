@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us - The Stripped Umbrella</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="/assets/images/su_banner.gif" alt="banner">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Our Services</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <h2>Contact Us:</h2>
+        <form name="newForm" action="#" class="box" id="newForm" onsubmit="return false">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name:*</label>
+            <input type="text" name="firstName" maxlength="25" autocomplete="given-name" required><br>
+            <label>Last Name:*</label>
+            <input type="text" name="lastName" maxlength="25" autocomplete="family-name" required><br>
+            <label>Email:*</label>
+            <input type="email" name="email" maxlength="35" autocomplete="email" required><br>
+            <label>Please select the music genre(s) that you like:</label><br>
+            <input type="checkbox" name="classicCheck" id="classicCheck">
+            <label for="classicCheck">Classic</label><br>
+            <input type="checkbox" name="jazzCheck" id="jazzCheck">
+            <label for="jazzCheck">Jazz</label><br>
+            <input type="checkbox" name="bluesCheck" id="bluesCheck">
+            <label for="bluesCheck">Blues</label><br>
+            <input type="checkbox" name="instrumentalCheck" id="instrumentalCheck">
+            <label for="instrumentalCheck">Instrumental</label>
+          </fieldset>
+          <fieldset>
+            <legend>Your Message</legend>
+            <label>How did you hear about us?</label>
+            <select name="hearAboutUs">
+              <option>Our website</option>
+              <option>Friends</option>
+              <option>TV Adv.</option>
+              <option>Other</option>
+            </select><br>
+            <label>Would you recommend us to your friends?</label><br>
+            <input type="radio" name="recommend" id="yesRadio" value="yes" checked>
+            <label for="yesRadio">Yes</label>
+            <input type="radio" name="recommend" id="noRadio" value="yes">
+            <label for="noRadio">No</label>
+            <input type="radio" name="recommend" id="maybeRadio" value="yes">
+            <label for="maybeRadio">Maybe</label><br>
+            <label>Your request:</label><br>
+            <textarea name="request" rows="4" cols="40"></textarea><br>
+            <input type="checkbox" name="emailUpdatesCheck" checked>
+            <label>Sign me up for email updates</label><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8659971242796!2d-79.39194918419157!3d43.67175667912064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sfr!2sfr!4v1663704101294!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </main>
+      <footer>
+        Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Tristan LOYE - All rights reserved
+      </footer>
+    </div>
+  </body>
+</html>
