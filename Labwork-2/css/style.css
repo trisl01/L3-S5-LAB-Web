@@ -44,3 +44,13 @@ nav li, nav {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+nav li a:link, nav li a:visited {
+  color: #56a3c7;
+}
+nav li a:hover {
+  color: #0296d0;
+}
+nav li a:active {
+  color: #7fb1bc;
+}
