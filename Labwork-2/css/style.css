@@ -129,3 +129,10 @@ legend {
   padding: 0 5px;
   border-radius: 5px;
 }
+
+input[type="submit"] {
+  border: solid 1px #cd6f1d;
+  padding: 5px;
+  background-color: #cd6f1d;
+  color: #fff;
+}
