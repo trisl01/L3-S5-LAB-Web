@@ -66,3 +66,10 @@ h1, h2, h3 {
   color: #837ea9;
   font-weight: bold;
 }
+
+.img-centre {
+  margin: 5px auto;
+  padding: 2px;
+  display: block;
+  width: 50%;
+}
