@@ -54,3 +54,8 @@ nav li a:hover {
 nav li a:active {
   color: #7fb1bc;
 }
+
+a {
+  color: #000;
+  text-decoration: none;
+}
