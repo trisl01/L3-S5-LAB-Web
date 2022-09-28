@@ -32,3 +32,8 @@ div.container {
 header, nav, footer {
   /*background-color: rgb(255, 172, 65);*/
 }
+
+nav ul {
+  margin: 0;
+  padding: 5px;
+}
