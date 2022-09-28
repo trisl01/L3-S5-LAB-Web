@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: #000;
+  background-image: url("../assets/images/dark-wood2.jpg");
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container {
+  width: 950px;
+  /*max-width: 950px;*/
+  margin: 5px 0;
+  /*margin-top: 5px*/
+  /*margin-bottom: 5px*/
+  box-sizing: border-box;
+  /*background-color: rgb(255,209,149);*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50px, rgba(255,209,149,1) 60px);
+}
+
+.content {
+  padding: 0 10px;
+  line-height: 1.4em;
+}
+
+header, nav, footer {
+  /*background-color: rgb(255, 172, 65);*/
+}
+
+nav ul {
+  margin: 0;
+  padding: 5px;
+}
+
+nav li, nav {
+  display: inline-block;
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav li a:link, nav li a:visited {
+  color: #56a3c7;
+}
+nav li a:hover {
+  color: #0296d0;
+}
+nav li a:active {
+  color: #7fb1bc;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 10px;
+  text-transform: uppercase;
+  color: #837ea9;
+  font-weight: bold;
+}
+
+.img-centre {
+  margin: 5px auto;
+  padding: 2px;
+  display: block;
+}
+
+audio, video {
+  display: block;
+  margin: 10px auto;
+}
+
+table {
+  width: 800px;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: solid 1px;
+  padding: 2px 5px;
+  background-color: #fff;
+}
+
+table th, tfoot td {
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  /*color: #000;*/
+}
+
+dt {
+  font-weight: bold;
+}
+
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 1px 0;
+}
+
+iframe {
+  margin: 10px auto;
+  display: block;
+}
+
+fieldset {
+  width: 500px;
+  margin: 20px auto;
+  border: solid 1px #cd6f1d;
+  border-radius: 5px;
+  background-color: #f48322;
+}
+
+legend {
+  font-style: italic;
+  background-color: #ffd195;
+  margin: 0 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  border: solid 1px #cd6f1d;
+  padding: 5px;
+  background-color: #cd6f1d;
+  color: #fff;
+  border-radius: 5px;
+}
+input[type="submit"]:hover {
+  border: solid 1px #a85a17;
+  background-color: #a85a17;
+  cursor: pointer;
+}
