@@ -28,3 +28,7 @@ div.container {
   padding: 0 10px;
   line-height: 1.4em;
 }
+
+header, nav, footer {
+  /*background-color: rgb(255, 172, 65);*/
+}
