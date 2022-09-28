@@ -7,4 +7,19 @@ body {
   background-image: url("../assets/images/dark-wood2.jpg");
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container {
+  width: 950px;
+  /*max-width: 950px;*/
+  margin: 5px 0;
+  /*margin-top: 5px*/
+  /*margin-bottom: 5px*/
+  box-sizing: border-box;
+  /*background-color: rgb(255,209,149);*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50px, rgba(255,209,149,1) 60px);
 }
