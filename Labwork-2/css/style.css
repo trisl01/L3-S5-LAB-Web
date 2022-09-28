@@ -102,3 +102,9 @@ table th, tfoot td {
 dt {
   font-weight: bold;
 }
+
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 1px 0;
+}
