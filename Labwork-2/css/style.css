@@ -118,5 +118,6 @@ fieldset {
   width: 500px;
   margin: 20px auto;
   border: solid 1px #cd6f1d;
+  border-radius: 5px;
   background-color: #f48322;
 }
