@@ -92,3 +92,9 @@ table td, table th {
   padding: 2px 5px;
   background-color: #fff;
 }
+
+table th, tfoot td {
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  /*color: #000;*/
+}
