@@ -98,3 +98,7 @@ table th, tfoot td {
   background-color: #eeeeee;
   /*color: #000;*/
 }
+
+dt {
+  font-weight: bold;
+}
