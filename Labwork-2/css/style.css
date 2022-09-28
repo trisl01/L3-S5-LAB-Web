@@ -108,3 +108,8 @@ footer {
   text-align: center;
   padding: 1px 0;
 }
+
+iframe {
+  margin: 10px auto;
+  display: block;
+}
