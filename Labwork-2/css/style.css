@@ -71,19 +71,16 @@ h1, h2, h3 {
   margin: 5px auto;
   padding: 2px;
   display: block;
-  width: 50%;
 }
 
 audio, video {
   display: block;
-  width: 50%;
   margin: 10px auto;
 }
 
 table {
   width: 800px;
   margin: 10px auto;
-  width: 0%;
   border-collapse: collapse;
 }
 
