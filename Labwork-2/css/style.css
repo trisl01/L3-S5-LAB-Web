@@ -23,3 +23,8 @@ div.container {
   /*background-color: rgb(255,209,149);*/
   background: linear-gradient(to bottom, rgba(0,0,0,0) 50px, rgba(255,209,149,1) 60px);
 }
+
+.content {
+  padding: 0 10px;
+  line-height: 1.4em;
+}
