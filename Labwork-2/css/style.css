@@ -86,3 +86,9 @@ table {
   width: 0%;
   border-collapse: collapse;
 }
+
+table td, table th {
+  border: solid 1px;
+  padding: 2px 5px;
+  background-color: #fff;
+}
