@@ -79,3 +79,10 @@ audio, video {
   width: 50%;
   margin: 10px auto;
 }
+
+table {
+  width: 800px;
+  margin: 10px auto;
+  width: 0%;
+  border-collapse: collapse;
+}
