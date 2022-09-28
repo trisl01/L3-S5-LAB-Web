@@ -135,4 +135,5 @@ input[type="submit"] {
   padding: 5px;
   background-color: #cd6f1d;
   color: #fff;
+  border-radius: 5px;
 }
