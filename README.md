@@ -9,3 +9,6 @@
 - The lab-work covers all the important and the basic HTML elements that we have covered in the class.
 - All the required files for the lab-work like the images, videos, and audios will be provided to you.
 - You can also copy all the paragraphs and the titles from the pdf file the contains the lab-work paragraphs.
+
+## Labwork 2 - CSS
+- This assignment will be a demonstration of your skills in using CSS2 and CSS3 to style the entire website (4 pages) that you have created in the HTML assignment.
