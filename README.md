@@ -2,6 +2,8 @@
 > TI510M - Advanced Web programming<br>
 > Tristan LOYE
 
+[Link to the website](https://trisl01.github.io/L3-S5-LAB-Web/)
+
 ## Labwork 1 - HTML
 - It will be a demonstration of your skills in using HTML for creating a micro website of a fictional company “The stripped Umbrella” that is consisted of 4 pages.
 - You will write the entire lab-work using only HTML language and no styling for now. The lab-work is consisted of using the last version of HTML which is HTML5.
