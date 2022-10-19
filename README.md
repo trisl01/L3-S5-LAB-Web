@@ -17,3 +17,4 @@
 - This assignment will be a demonstration of your skills in using CSS2 and CSS3 to style the entire website (4 pages) that you have created in the HTML assignment.
 
 ## Labwork 3 - JS
+[Link to the Labwork 3](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3)
