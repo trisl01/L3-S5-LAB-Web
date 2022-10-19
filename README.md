@@ -18,3 +18,14 @@
 
 ## Labwork 3 - JS
 [Link to the Labwork 3](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3)
+- You will ask the user to input the number of the courses that he/she has finished, then loop for x number of times based on the number of courses to let the user input the grade/mark for each course then you will find the average of all these courses and display his/her grade.
+- This lab-work will a be demonstration of your skills in JavaScript for:
+  - Creating and initializing variable following JavaScript naming convention
+  - Reading/output data from/to the browser window
+  - Converting string data type to integer/float numbers
+  - Using the two types of loops: While and For
+  - Arithmetic operations with BEDMAS/PEDMAS Rules
+  - Using Arrays and Array’s method
+  - Validation and Decision making with If/else if/else blocks with logical operators
+- For this lab-work you will use Internal JavaScript (within the HTML file)
+- You need to place the script element in the proper location based on what we have covered
