@@ -3,12 +3,18 @@
   --color-on-error-light: #FFFFFF;
   --color-error-dark: #F2B8B5;
   --color-on-error-dark: #601410;
+  --color-primary-light: #005ac1;
+  --color-on-primary-light: #ffffff;
+  --color-primary-container-light: #d6e2ff;
+  --color-on-primary-container-light: #001a42;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --color-error: var(--color-error-light);
     --color-on-error: var(--color-on-error-light);
+    --color-primary: var(--color-primary-light);
+    --color-on-primary: var(--color-on-primary-light);
   }
 }
 
@@ -16,6 +22,8 @@
   :root {
     --color-error: var(--color-error-dark);
     --color-on-error: var(--color-on-error-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-on-primary: var(--color-on-primary-dark);
   }
 }
 
@@ -27,4 +35,16 @@
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
+}
+
+#title-courseMarks {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
