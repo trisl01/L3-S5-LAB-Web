@@ -28,7 +28,7 @@
       let numOfCourses = Number(prompt("How many courses did you finish?",0))
       console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
 
-      if (isNaN(numOfCourses)) {
+      if (isNaN(numOfCourses) || numOfCourses < 0) {
         document.open()
         document.write("<div id='invalid-numOfCourse'>Invalid Input!</div>")
         document.close()
