@@ -70,6 +70,22 @@
         }
         console.log(courseMarks)
 
+        /* Q5
+            Now you will need to print or display all the course marks that is saved into the “courseMarks” array
+              to the user using any kind of loop. You will print them all with document.write() as shown below or
+              in the image in the last page of this document:
+                - 98
+                - 91
+                - 93
+        */
+        document.open()
+        let writeText = "<div><div id='title-courseMarks'>Course marks</div>"
+        for (let index = 0; index < courseMarks.length; index++) {
+          writeText += "<div class='mark-courseMarks'>" + courseMarks[index] + "</div>"
+        }
+        writeText += "</div>"
+        document.write(writeText)
+        document.close()
       }
     </script>
   </body>
