@@ -1,0 +1,30 @@
+:root {
+  --color-error-light: #B3261E;
+  --color-on-error-light: #FFFFFF;
+  --color-error-dark: #F2B8B5;
+  --color-on-error-dark: #601410;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-error: var(--color-error-light);
+    --color-on-error: var(--color-on-error-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: var(--color-error-dark);
+    --color-on-error: var(--color-on-error-dark);
+  }
+}
+
+#invalid-numOfCourse {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
