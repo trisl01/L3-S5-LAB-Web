@@ -10,6 +10,19 @@
   </head>
   <body>
     <script>
+      /* Q1 
+          You will ask the user to enter how many courses did he/she finish using the prompt() built-in function 
+            (Browser’s method):
+              a. The text to be display with the prompt: “How many courses did you finish?”
+              b. Add a default value of “0” in case if the use doesn’t input any value
+              c. Declare a variable named “numOfCourses” to save the number of courses (which is the value that
+                  will be returned from the prompt method based on the user’s input).
+              d. The “numOfCourses” should be just an int variable (variable with integer value). Make sure that
+                  the input value (which is string) is converted into number (numeric) using any one of the
+                  appropriate JavaScript built-in methods/functions
+      */
+      let numOfCourses = Number(prompt("How many courses did you finish?",0))
+      console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
     </script>
   </body>
 </html>
