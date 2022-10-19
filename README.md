@@ -18,6 +18,13 @@
 
 ## Labwork 3 - JS
 [Link to the Labwork 3](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3)
+
+[Link to the Labwork 3 - Part 1](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3/part-1.html)
+
+[Link to the Labwork 3 - Part 2](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3/part-2.html)
+
+[Link to the Labwork 3 - Part 3](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-3/part-3.html)
+
 - You will ask the user to input the number of the courses that he/she has finished, then loop for x number of times based on the number of courses to let the user input the grade/mark for each course then you will find the average of all these courses and display his/her grade.
 - This lab-work will a be demonstration of your skills in JavaScript for:
   - Creating and initializing variable following JavaScript naming convention
