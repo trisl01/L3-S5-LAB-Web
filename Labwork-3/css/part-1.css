@@ -7,6 +7,10 @@
   --color-on-primary-light: #ffffff;
   --color-primary-container-light: #d6e2ff;
   --color-on-primary-container-light: #001a42;
+  --color-primary-dark: #abc7ff;
+  --color-on-primary-dark: #002e6a;
+  --color-primary-container-dark: #004495;
+  --color-on-primary-container-dark: #d6e2ff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,6 +19,8 @@
     --color-on-error: var(--color-on-error-light);
     --color-primary: var(--color-primary-light);
     --color-on-primary: var(--color-on-primary-light);
+    --color-primary-container: var(--color-primary-container-light);
+    --color-on-primary-container: var(--color-on-primary-container-light);
   }
 }
 
@@ -24,6 +30,8 @@
     --color-on-error: var(--color-on-error-dark);
     --color-primary: var(--color-primary-dark);
     --color-on-primary: var(--color-on-primary-dark);
+    --color-primary-container: var(--color-primary-container-dark);
+    --color-on-primary-container: var(--color-on-primary-container-dark);
   }
 }
 
@@ -45,6 +53,17 @@
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.mark-courseMarks {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
   width: 100%;
   text-align: center;
 }
