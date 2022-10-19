@@ -1,0 +1,56 @@
+#invalid-numOfCourse {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+  margin: 10px;
+  margin-top: 30px;
+  padding: 30px 50px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+#title-courseMarks {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mark-courseMarks {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#average-courseMarks {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#average {
+  font-size: 30px;
+}
+
+#grade {
+  font-size: 25px;
+}
+
+#average, #grade {
+  font-weight: bold;
+}

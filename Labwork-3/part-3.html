@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TI510M - LAB 3 - Part 3</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/part-3.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <script>
+      /* Q1 
+          Use document.write() to output the average value plus the grade, so you will use “if condition” to check
+            the average value as explained below:
+              a. If average >= 90 and average <=100 -> display: “Your final average is X. Your grade is A+”
+              b. If average >= 80 and average <=89 -> display: “Your final average is X. Your grade is B”
+              c. If average >= 70 and average <=79 -> display: “Your final average is X. Your grade is C”
+              d. If average >= 60 and average <=69 -> display: “Your final average is X. Your grade is D”
+              e. If average <60 -> display: “Your final average is X. Your grade is F”
+              f. Else display: “Sorry, All the marks have to be from minimum 0 to maximum 100!”
+            Notes to do:
+                - All the if condition messages have to be displayed using “document.write()” method (as mentioned
+                  before)
+                - You will have to round the average value to 2 decimal points
+      */
+
+      let numOfCourses = Number(prompt("How many courses did you finish?",0))
+      console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
+
+      if (isNaN(numOfCourses) || numOfCourses < 0) {
+        document.open()
+        document.write("<div id='invalid-numOfCourse'>Invalid Input!</div>")
+        document.close()
+      } else {
+        let courseMarks = []
+        console.log(courseMarks)
+
+        for (let index = 0; index < numOfCourses; index++) {
+          let newCourse = Number(prompt(`Enter your mark for course ${index+1} (in %)`,0))
+          while (isNaN(newCourse) || newCourse < 0 || newCourse > 100) {
+            alert("Invalid Input!")
+            newCourse = Number(prompt(`Invalid Input! Enter your mark for course ${index+1} (in %)`,0))
+          }
+          courseMarks.push(newCourse)
+        }
+        console.log(courseMarks)
+
+        document.open()
+        let writeText = "<div><div id='title-courseMarks'>Course marks</div>"
+        let average = 0
+        for (let index = 0; index < courseMarks.length; index++) {
+          writeText += "<div class='mark-courseMarks'>" + courseMarks[index] + "%</div>"
+          average += courseMarks[index]
+        }
+        average /= courseMarks.length
+        console.log("Average", average)
+        writeText += "<div id='average-courseMarks'>Your final average is<br><span id='average'>" + average.toFixed(2) + "%</span><br>Your grade is <span id='grade'>"
+        
+        if (average >= 90 && average <= 100) {
+          writeText += "A+"
+        } else if (average >= 80 && average < 90) {
+          writeText += "B"
+        } else if (average >= 70 && average < 80) {
+          writeText += "C"
+        } else if (average >= 60 && average < 70) {
+          writeText += "D"
+        } else {
+          writeText += "F"
+        }
+
+        writeText += "</span></div></div>"
+        document.write(writeText)
+        document.close()
+      }
+    </script>
+  </body>
+</html>

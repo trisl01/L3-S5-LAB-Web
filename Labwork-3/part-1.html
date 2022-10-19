@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TI510M - LAB 3 - Part 1</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/part-1.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <script>
+      /* Q1 
+          You will ask the user to enter how many courses did he/she finish using the prompt() built-in function 
+            (Browser’s method):
+              a. The text to be display with the prompt: “How many courses did you finish?”
+              b. Add a default value of “0” in case if the use doesn’t input any value
+              c. Declare a variable named “numOfCourses” to save the number of courses (which is the value that
+                  will be returned from the prompt method based on the user’s input).
+              d. The “numOfCourses” should be just an int variable (variable with integer value). Make sure that
+                  the input value (which is string) is converted into number (numeric) using any one of the
+                  appropriate JavaScript built-in methods/functions
+      */
+      let numOfCourses = Number(prompt("How many courses did you finish?",0))
+      console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
+      
+      /* Q2
+          You will have to check If the user enters an invalid input like a string value instead of numeric as 
+            shown in the scenario with images below:
+              In the image below, the user made a mistake by typing letter “a” instead of a number
+          Then you should do the following two steps:
+              a) Use document.write to output the text “Invalid Input!” as shown in the image below
+              b) Stop the rest of your code from being executed (you can use if/else condition)
+      */
+      if (isNaN(numOfCourses)) {
+        document.open()
+        document.write("<div id='invalid-numOfCourse'>Invalid Input!</div>")
+        document.close()
+      } else {
+
+        /* Q3 
+            Declare an empty array variable named “courseMarks”, this variable will be used to contain the course
+              marks (later). This “courseMarks” will be just an empty array object.
+        */
+        let courseMarks = []
+        console.log(courseMarks)
+
+        /* Q4
+            You will loop for a specific number of times based on your variable numOfCourses, for example if
+              numOfCourses value is 3 as shown in the image above, you will make the loop iterate for 3 times by
+              setting its condition. In each iteration of the loop, you will ask the user to enter his/her course
+              mark. This mark will be inserted into the array “courseMarks” immediately (instantly on the fly), so
+              you will populate this array with the user input through this while loop.
+            Notice that You need to modify the course number in the print message for every iteration throughout
+              the loop as shown below (Hint: you can user the same while loop counter if it starts with 1):
+                - For the first time: Enter your mark for course 1
+                - For the second time: Enter your mark for course 2
+                - And so on for the x time: Enter your mark for course x
+            The “courseMarks” array will be updated inside the loop in each iteration to save the current user
+              input which represents the current course mark (with a new index for each mark using the loop
+              counter if it counts from 0. or you can just simply use the array method: .push()
+        */
+        for (let index = 0; index < numOfCourses; index++) {
+          let newCourse = Number(prompt(`Enter your mark for course ${index+1}`,0))
+          while (isNaN(newCourse)) {
+            alert("Invalid Input!")
+            newCourse = Number(prompt(`Invalid Input! Enter your mark for course ${index+1}`,0))
+          }
+          courseMarks.push(newCourse)
+        }
+        console.log(courseMarks)
+
+        /* Q5
+            Now you will need to print or display all the course marks that is saved into the “courseMarks” array
+              to the user using any kind of loop. You will print them all with document.write() as shown below or
+              in the image in the last page of this document:
+                - 98
+                - 91
+                - 93
+        */
+        document.open()
+        let writeText = "<div><div id='title-courseMarks'>Course marks</div>"
+        for (let index = 0; index < courseMarks.length; index++) {
+          writeText += "<div class='mark-courseMarks'>" + courseMarks[index] + "</div>"
+        }
+        writeText += "</div>"
+        document.write(writeText)
+        document.close()
+      }
+    </script>
+  </body>
+</html>
