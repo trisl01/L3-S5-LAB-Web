@@ -10,10 +10,31 @@
   </head>
   <body>
     <script>
+      /* Q1 
+          You will find the average (the mean) for all the courses:
+              a. First, you need to find the total of all the courses marks inside the array (for sure) using any
+                  type of loop you want.
+                HINT:
+                  Instead of creating another for loop block and increase your code lines, you can just use/modify
+                    the same first loop for asking the user to input the marks.
+                  So, inside the same loop you can do/achieve two tasks:
+                      - Ask the user to input their marks to be inserted immediately into the “courseMarks”
+                      - Using the formula for calculating the total (Refer to my code examples)
+                  I will accept any answer you provide because in Programming there is no specific or fixed way to
+                    follow, the rule of thumb is always trying to write less code as mush as you can to get the
+                    right result.
+              b. Then (after the loop) you can divide the result of the total of the courses by the number of
+                  courses and assign the result into a new variable named “average”:
+                  - The math formula for average:
+                      - The total of the numeric values / How many numeric values
+                  - The math code for average:
+                      - The total of all the marks in our array(list) / The length of our array
+      */
+
       let numOfCourses = Number(prompt("How many courses did you finish?",0))
       console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
-      
-      if (isNaN(numOfCourses)) {
+
+      if (isNaN(numOfCourses) || numOfCourses < 0) {
         document.open()
         document.write("<div id='invalid-numOfCourse'>Invalid Input!</div>")
         document.close()
@@ -33,9 +54,13 @@
 
         document.open()
         let writeText = "<div><div id='title-courseMarks'>Course marks</div>"
+        let average = 0
         for (let index = 0; index < courseMarks.length; index++) {
           writeText += "<div class='mark-courseMarks'>" + courseMarks[index] + "</div>"
+          average += courseMarks[index]
         }
+        average /= courseMarks.length
+        console.log("Average", average)
         writeText += "</div>"
         document.write(writeText)
         document.close()
