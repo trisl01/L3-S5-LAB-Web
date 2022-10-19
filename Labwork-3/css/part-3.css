@@ -50,3 +50,7 @@
 #grade {
   font-size: 25px;
 }
+
+#average, #grade {
+  font-weight: bold;
+}
