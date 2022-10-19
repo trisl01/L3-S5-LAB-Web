@@ -174,3 +174,7 @@ footer {
   padding: 10px;
   font-size: 20px;
 }
+
+#back {
+  list-style-type: "\2190";
+}
