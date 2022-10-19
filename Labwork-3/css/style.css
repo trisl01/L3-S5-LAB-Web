@@ -1,21 +1,113 @@
 :root {
+  --color-primary-light: #005ac1;
+  --color-on-primary-light: #ffffff;
+  --color-primary-container-light: #d6e2ff;
+  --color-on-primary-container-light: #001a42;
+  --color-secondary-light: #205daf;
+  --color-on-secondary-light: #ffffff;
+  --color-secondary-container-light: #d6e3ff;
+  --color-on-secondary-container-light: #001b3f;
+  --color-tertiary-light: #295ea7;
+  --color-on-tertiary-light: #ffffff;
+  --color-tertiary-container-light: #d5e3ff;
+  --color-on-tertiary-container-light: #001b3f;
+  --color-error-light: #B3261E;
+  --color-on-error-light: #FFFFFF;
+  --color-error-container-light: #F9DEDC;
+  --color-on-error-container-light: #410E0B;
+  --color-outline-light: #79747E;
   --color-background-light: #FFFBFE;
   --color-on-background-light: #1C1B1F;
+  --color-surface-light: #FFFBFE;
+  --color-on-surface-light: #1C1B1F;
+  --color-surface-variant-light: #E7E0EC;
+  --color-on-surface-variant-light: #49454F;
+  --color-inverse-surface-light: #313033;
+  --color-inverse-on-surface-light: #F4EFF4;
+  --color-primary-dark: #abc7ff;
+  --color-on-primary-dark: #002e6a;
+  --color-primary-container-dark: #004495;
+  --color-on-primary-container-dark: #d6e2ff;
+  --color-secondary-dark: #a8c7ff;
+  --color-on-secondary-dark: #002f67;
+  --color-secondary-container-dark: #004591;
+  --color-on-secondary-container-dark: #d6e3ff;
+  --color-tertiary-dark: #a8c7ff;
+  --color-on-tertiary-dark: #002f65;
+  --color-tertiary-container-dark: #00458d;
+  --color-on-tertiary-container-dark: #d5e3ff;
+  --color-error-dark: #F2B8B5;
+  --color-on-error-dark: #601410;
+  --color-error-container-dark: #8C1D18;
+  --color-on-error-container-dark: #F9DEDC;
+  --color-outline-dark: #938F99;
   --color-background-dark: #1C1B1F;
   --color-on-background-dark: #E6E1E5;
+  --color-surface-dark: #1C1B1F;
+  --color-on-surface-dark: #E6E1E5;
+  --color-surface-variant-dark: #49454F;
+  --color-on-surface-variant-dark: #CAC4D0;
+  --color-inverse-surface-dark: #E6E1E5;
+  --color-inverse-on-surface-dark: #1C1B1F;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    --color-primary: var(--color-primary-light);
+    --color-on-primary: var(--color-on-primary-light);
+    --color-primary-container: var(--color-primary-container-light);
+    --color-on-primary-container: var(--color-on-primary-container-light);
+    --color-secondary: var(--color-secondary-light);
+    --color-on-secondary: var(--color-on-secondary-light);
+    --color-secondary-container: var(--color-secondary-container-light);
+    --color-on-secondary-container: var(--color-on-secondary-container-light);
+    --color-tertiary: var(--color-tertiary-light);
+    --color-on-tertiary: var(--color-on-tertiary-light);
+    --color-tertiary-container: var(--color-tertiary-container-light);
+    --color-on-tertiary-container: var(--color-on-tertiary-container-light);
+    --color-error: var(--color-error-light);
+    --color-on-error: var(--color-on-error-light);
+    --color-error-container: var(--color-error-container-light);
+    --color-on-error-container: var(--color-on-error-container-light);
+    --color-outline: var(--color-outline-light);
     --color-background: var(--color-background-light);
     --color-on-background: var(--color-on-background-light);
+    --color-surface: var(--color-surface-light);
+    --color-on-surface: var(--color-on-surface-light);
+    --color-surface-variant: var(--color-surface-variant-light);
+    --color-on-surface-variant: var(--color-on-surface-variant-light);
+    --color-inverse-surface: var(--color-inverse-surface-light);
+    --color-inverse-on-surface: var(--color-inverse-on-surface-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-primary: var(--color-primary-dark);
+    --color-on-primary: var(--color-on-primary-dark);
+    --color-primary-container: var(--color-primary-container-dark);
+    --color-on-primary-container: var(--color-on-primary-container-dark);
+    --color-secondary: var(--color-secondary-dark);
+    --color-on-secondary: var(--color-on-secondary-dark);
+    --color-secondary-container: var(--color-secondary-container-dark);
+    --color-on-secondary-container: var(--color-on-secondary-container-dark);
+    --color-tertiary: var(--color-tertiary-dark);
+    --color-on-tertiary: var(--color-on-tertiary-dark);
+    --color-tertiary-container: var(--color-tertiary-container-dark);
+    --color-on-tertiary-container: var(--color-on-tertiary-container-dark);
+    --color-error: var(--color-error-dark);
+    --color-on-error: var(--color-on-error-dark);
+    --color-error-container: var(--color-error-container-dark);
+    --color-on-error-container: var(--color-on-error-container-dark);
+    --color-outline: var(--color-outline-dark);
     --color-background: var(--color-background-dark);
     --color-on-background: var(--color-on-background-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-on-surface: var(--color-on-surface-dark);
+    --color-surface-variant: var(--color-surface-variant-dark);
+    --color-on-surface-variant: var(--color-on-surface-variant-dark);
+    --color-inverse-surface: var(--color-inverse-surface-dark);
+    --color-inverse-on-surface: var(--color-inverse-on-surface-dark);
   }
 }
 
