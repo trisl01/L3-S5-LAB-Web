@@ -44,6 +44,32 @@
         */
         let courseMarks = []
         console.log(courseMarks)
+
+        /* Q4
+            You will loop for a specific number of times based on your variable numOfCourses, for example if
+              numOfCourses value is 3 as shown in the image above, you will make the loop iterate for 3 times by
+              setting its condition. In each iteration of the loop, you will ask the user to enter his/her course
+              mark. This mark will be inserted into the array “courseMarks” immediately (instantly on the fly), so
+              you will populate this array with the user input through this while loop.
+            Notice that You need to modify the course number in the print message for every iteration throughout
+              the loop as shown below (Hint: you can user the same while loop counter if it starts with 1):
+                - For the first time: Enter your mark for course 1
+                - For the second time: Enter your mark for course 2
+                - And so on for the x time: Enter your mark for course x
+            The “courseMarks” array will be updated inside the loop in each iteration to save the current user
+              input which represents the current course mark (with a new index for each mark using the loop
+              counter if it counts from 0. or you can just simply use the array method: .push()
+        */
+        for (let index = 0; index < numOfCourses; index++) {
+          let newCourse = Number(prompt(`Enter your mark for course ${index+1}`,0))
+          while (isNaN(newCourse)) {
+            alert("Invalid Input!")
+            newCourse = Number(prompt(`Invalid Input! Enter your mark for course ${index+1}`,0))
+          }
+          courseMarks.push(newCourse)
+        }
+        console.log(courseMarks)
+
       }
     </script>
   </body>
