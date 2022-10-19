@@ -23,6 +23,21 @@
       */
       let numOfCourses = Number(prompt("How many courses did you finish?",0))
       console.log("How many courses did you finish?", numOfCourses, typeof(numOfCourses))
+      
+      /* Q2
+          You will have to check If the user enters an invalid input like a string value instead of numeric as 
+            shown in the scenario with images below:
+              In the image below, the user made a mistake by typing letter “a” instead of a number
+          Then you should do the following two steps:
+              a) Use document.write to output the text “Invalid Input!” as shown in the image below
+              b) Stop the rest of your code from being executed (you can use if/else condition)
+      */
+      if (isNaN(numOfCourses)) {
+        document.open()
+        document.write("<div id='invalid-numOfCourse'>Invalid Input!</div>")
+        document.close()
+      } else {
+      }
     </script>
   </body>
 </html>
