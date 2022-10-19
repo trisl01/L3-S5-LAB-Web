@@ -31,3 +31,14 @@
   width: 100%;
   text-align: center;
 }
+
+#average-courseMarks {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
