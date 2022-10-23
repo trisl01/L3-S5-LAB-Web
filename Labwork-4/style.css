@@ -30,3 +30,11 @@ h1 {
 p {
   margin: 7px 0px;
 }
+
+ul {
+  margin: 10px 0px;
+}
+
+ul li a {
+  color: var(--color-on-primary-container);
+}
