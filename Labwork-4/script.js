@@ -12,6 +12,9 @@ function circleArea() {
   if (!isNaN(radius) && radius >= 0 && document.getElementById("circle-radius").value != '') {
     /* Remove class error */
     document.getElementById("circle-radius").classList.remove("error-input")
+    /* Calculate area */
+    let area = Math.PI * radius * radius
+    console.log(`>> Circle's area = pi * ${radius} * ${radius} = ${area}`)
   } else {
     /* Display error */
     document.getElementById("circle-radius").classList.add("error-input")
@@ -41,6 +44,9 @@ function triangleArea() {
     /* Remove class error */
     document.getElementById("triangle-base").classList.remove("error-input")
     document.getElementById("triangle-height").classList.remove("error-input")
+    /* Calculate area */
+    let area = (base * height) / 2
+    console.log(`>> Triangle's area = (${base} * ${height}) / 2 = ${area}`)
   } else {
     /* Display error(s) */
     document.getElementById("triangle-base").classList.add("error-input")
@@ -85,6 +91,9 @@ function squareArea() {
   if (!isNaN(length) && length >= 0 && document.getElementById("square-length").value != '') {
     /* Remove class error */
     document.getElementById("square-length").classList.remove("error-input")
+    /* Calculate area */
+    let area = length * length
+    console.log(`>> Square's area = ${length} * ${length} = ${area}`)
   } else {
     /* Display error */
     document.getElementById("square-length").classList.add("error-input")
@@ -114,6 +123,9 @@ function rectangleArea() {
     /* Remove class error */
     document.getElementById("rectangle-width").classList.remove("error-input")
     document.getElementById("rectangle-height").classList.remove("error-input")
+    /* Calculate area */
+    let area = width * height
+    console.log(`>> Rectangle's area = ${width} * ${height} = ${area}`)
   } else {
     /* Display error(s) */
     document.getElementById("rectangle-width").classList.add("error-input")
