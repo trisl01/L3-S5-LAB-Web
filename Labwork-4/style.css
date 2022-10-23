@@ -67,6 +67,21 @@ section input.error-input {
   color: var(--color-on-error-container);
 }
 
+.go {
+  width: max-content;
+  margin: 10px auto;
+}
+.go a {
+  color: var(--color-on-primary-container);
+  text-decoration: none;
+  padding: 10px 15px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+.go a:hover {
+  text-decoration: underline;
+}
+
 .bold {
   font-weight: bold;
 }
