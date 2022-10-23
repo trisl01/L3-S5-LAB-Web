@@ -13,6 +13,10 @@ function circleArea() {
   } else {
     /* Display error */
     document.getElementById("circle-radius").classList.add("error-input")
+
+    if (document.getElementById("circle-radius").value == '') {
+      console.error("Circle's radius: Empty!")
+    }
   }
 }
 
@@ -32,6 +36,16 @@ function triangleArea() {
     /* Display error(s) */
     document.getElementById("triangle-base").classList.add("error-input")
     document.getElementById("triangle-height").classList.add("error-input")
+
+    /* Display error (base only) */
+    if (document.getElementById("triangle-base").value == '') {
+      console.error("Triangle's base: empty!")
+    }
+
+    /* Display error (height only) */
+    if (document.getElementById("triangle-height").value == '') {
+      console.error("Triangle's vertical height: empty!")
+    }
   }
 }
 
@@ -49,6 +63,10 @@ function squareArea() {
   } else {
     /* Display error */
     document.getElementById("square-length").classList.add("error-input")
+
+    if (document.getElementById("square-length").value == '') {
+      console.error("Square's length of side: Empty!")
+    }
   }
 }
 
@@ -68,5 +86,15 @@ function rectangleArea() {
     /* Display error(s) */
     document.getElementById("rectangle-width").classList.add("error-input")
     document.getElementById("rectangle-height").classList.add("error-input")
+
+    /* Display error (width only) */
+    if (document.getElementById("rectangle-width").value == '') {
+      console.error("Rectangle's width: empty!")
+    }
+
+    /* Display error (height only) */
+    if (document.getElementById("rectangle-height").value == '') {
+      console.error("Rectangle's height: empty!")
+    }
   }
 }
