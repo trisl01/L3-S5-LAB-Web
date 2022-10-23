@@ -66,3 +66,7 @@ section input.error-input {
   background-color: var(--color-error-container);
   color: var(--color-on-error-container);
 }
+
+.bold {
+  font-weight: bold;
+}
