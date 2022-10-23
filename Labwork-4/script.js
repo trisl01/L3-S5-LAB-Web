@@ -13,3 +13,8 @@ function triangleArea() {
 /* Square Area */
 function squareArea() {
 }
+
+
+/* Rectangle Area */
+function rectangleArea() {
+}
