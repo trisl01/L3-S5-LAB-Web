@@ -47,3 +47,7 @@ section {
   border-radius: 10px;
   padding: 20px;
 }
+
+section div {
+  margin: 10px 0px;
+}
