@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TI510M - LAB 4</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="top">Basic Geometry</h1>
+      <p>In this section, we are going to find the Area of some two-dimension shapes</p>
+      <p>You can click on any shape below:</p>
+      <ul>
+        <li><a href="#circle">Circle</a></li>
+        <li><a href="#triangle">Triangle</a></li>
+        <li><a href="#square">Square</a></li>
+        <li><a href="#rectangle">Rectangle</a></li>
+      </ul>
+
+      <!-- Circle Shape -->
+      <section id="circle">
+        <h2>Circle Area</h2>
+        <div>
+          <label for="circle-radius">Enter the value of the circle's <span class="bold">radius</span>:</label>
+          <input type="text" id="circle-radius">
+        </div>
+        <div>
+          <label for="circle-area" class="bold">Result:</label>
+          <input type="text" id="circle-area" readonly>
+        </div>
+        <hr>
+        <button onclick="circleArea()">Calculate</button>
+      </section>
+
+      <div class="go">
+        <a href="#top">Go to top</a>
+      </div>
+
+      <!-- Triangle Shape -->
+      <section id="triangle">
+        <h2>Triangle Area</h2>
+        <div>
+          <label for="triangle-base">Enter the value of the triangle's <span class="bold">base</span>:</label>
+          <input type="text" id="triangle-base"><br>
+          <label for="triangle-height">Enter the value of the triangle's <span class="bold">vertical height</span>:</label>
+          <input type="text" id="triangle-height">
+        </div>
+        <div>
+          <label for="triangle-area" class="bold">Result:</label>
+          <input type="text" id="triangle-area" readonly>
+        </div>
+        <hr>
+        <button onclick="triangleArea()">Calculate</button>
+      </section>
+
+      <div class="go">
+        <a href="#top">Go to top</a>
+      </div>
+
+      <!-- Square Shape -->
+      <section id="square">
+        <h2>Square Area</h2>
+        <div>
+          <label for="square-length">Enter the value of the square's <span class="bold">length of side</span>:</label>
+          <input type="text" id="square-length">
+        </div>
+        <div>
+          <label for="square-area" class="bold">Result:</label>
+          <input type="text" id="square-area" readonly>
+        </div>
+        <hr>
+        <button onclick="squareArea()">Calculate</button>
+      </section>
+
+      <div class="go">
+        <a href="#top">Go to top</a>
+      </div>
+
+      <!-- Rectangle Shape -->
+      <section id="rectangle">
+        <h2>Rectangle Area</h2>
+        <div>
+          <label for="rectangle-width">Enter the value of the triangle's <span class="bold">width</span>:</label>
+          <input type="text" id="rectangle-width"><br>
+          <label for="rectangle-height">Enter the value of the triangle's <span class="bold">height</span>:</label>
+          <input type="text" id="rectangle-height">
+        </div>
+        <div>
+          <label for="rectangle-area" class="bold">Result:</label>
+          <input type="text" id="rectangle-area" readonly>
+        </div>
+        <hr>
+        <button onclick="rectangleArea()">Calculate</button>
+      </section>
+
+      <div class="go">
+        <a href="#top">Go to top</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

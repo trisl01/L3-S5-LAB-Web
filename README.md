@@ -38,3 +38,29 @@
   - Validation and Decision making with If/else if/else blocks with logical operators
 - For this lab-work you will use Internal JavaScript (within the HTML file)
 - You need to place the script element in the proper location based on what we have covered
+
+## Labwork 4 - JS
+[Link to the Labwork 4](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-4)
+
+- You will create a single page for finding areas of the following 4 basic shapes:
+  - Circle
+  - Triangle
+  - Square
+  - Rectangle
+- This lab-work will be demonstration of your skills in:
+  - Using basic HTML elements:
+    - Block and Inline Elements
+  - Internal/Embedded CSS:
+    - To be places in the head section of the page
+  - Essential JavaScript Concepts:
+    - Creating variable following JavaScript naming convention
+    - Creating custom functions
+    - Reading/output data from/to the document using DOM methods and properties
+    - Converting string data type to integer/float numbers
+    - Using some of the properties of Math object
+    - Arithmetic operations with BEDMAS/PEDMAS Rules
+      - B/P for Brackets or Parenthesis
+      - E for exponential
+      - DM for division and multiplications
+      - AS for addition and subtractions
+    - Handling events through HTML attributes
