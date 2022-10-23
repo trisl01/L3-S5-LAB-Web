@@ -10,6 +10,9 @@ function circleArea() {
 
   /* Check input value */
   if (!isNaN(radius) && radius >= 0 && document.getElementById("circle-radius").value != '') {
+  } else {
+    /* Display error */
+    document.getElementById("circle-radius").classList.add("error-input")
   }
 }
 
@@ -25,6 +28,10 @@ function triangleArea() {
 
   /* Check input values */
   if ((!isNaN(base) && base >= 0 && document.getElementById("triangle-base").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("triangle-height").value != '')) {
+  } else {
+    /* Display error(s) */
+    document.getElementById("triangle-base").classList.add("error-input")
+    document.getElementById("triangle-height").classList.add("error-input")
   }
 }
 
@@ -39,6 +46,9 @@ function squareArea() {
 
   /* Check input value */
   if (!isNaN(length) && length >= 0 && document.getElementById("square-length").value != '') {
+  } else {
+    /* Display error */
+    document.getElementById("square-length").classList.add("error-input")
   }
 }
 
@@ -54,5 +64,9 @@ function rectangleArea() {
 
   /* Check input values */
   if ((!isNaN(width) && width >= 0 && document.getElementById("rectangle-width").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("rectangle-height").value != '')) {
+  } else {
+    /* Display error(s) */
+    document.getElementById("rectangle-width").classList.add("error-input")
+    document.getElementById("rectangle-height").classList.add("error-input")
   }
 }
