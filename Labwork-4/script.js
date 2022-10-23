@@ -16,6 +16,8 @@ function circleArea() {
 
     if (document.getElementById("circle-radius").value == '') {
       console.error("Circle's radius: Empty!")
+    } else if (radius < 0){
+      console.error("Circle's radius: Negative number!")
     }
   }
 }
@@ -40,11 +42,15 @@ function triangleArea() {
     /* Display error (base only) */
     if (document.getElementById("triangle-base").value == '') {
       console.error("Triangle's base: empty!")
+    } else if (base < 0) {
+      console.error("Triangle's base: negative number!")
     }
 
     /* Display error (height only) */
     if (document.getElementById("triangle-height").value == '') {
       console.error("Triangle's vertical height: empty!")
+    } else if (height < 0) {
+      console.error("Triangle's vertical height: negative number!")
     }
   }
 }
@@ -66,6 +72,8 @@ function squareArea() {
 
     if (document.getElementById("square-length").value == '') {
       console.error("Square's length of side: Empty!")
+    } else if (length < 0){
+      console.error("Square's length of side: Negative number!")
     }
   }
 }
@@ -90,11 +98,15 @@ function rectangleArea() {
     /* Display error (width only) */
     if (document.getElementById("rectangle-width").value == '') {
       console.error("Rectangle's width: empty!")
+    } else if (width < 0) {
+      console.error("Rectangle's width: negative number!")
     }
 
     /* Display error (height only) */
     if (document.getElementById("rectangle-height").value == '') {
       console.error("Rectangle's height: empty!")
+    } else if (height < 0) {
+      console.error("Rectangle's height: negative number!")
     }
   }
 }
