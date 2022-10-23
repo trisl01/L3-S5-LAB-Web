@@ -7,6 +7,10 @@ function circleArea() {
   document.getElementById("circle-area").value = "NaN"
   /* Get the value of the radius */
   let radius = Number(document.getElementById("circle-radius").value)
+
+  /* Check input value */
+  if (!isNaN(radius) && radius >= 0 && document.getElementById("circle-radius").value != '') {
+  }
 }
 
 
@@ -18,6 +22,10 @@ function triangleArea() {
   /* Get the value of the base and the vertical height */
   let base = Number(document.getElementById("triangle-base").value)
   let height = Number(document.getElementById("triangle-height").value)
+
+  /* Check input values */
+  if ((!isNaN(base) && base >= 0 && document.getElementById("triangle-base").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("triangle-height").value != '')) {
+  }
 }
 
 
@@ -28,6 +36,10 @@ function squareArea() {
   document.getElementById("square-area").value = "NaN"
   /* Get the value of the length */
   let length = Number(document.getElementById("square-length").value)
+
+  /* Check input value */
+  if (!isNaN(length) && length >= 0 && document.getElementById("square-length").value != '') {
+  }
 }
 
 
@@ -39,4 +51,8 @@ function rectangleArea() {
   /* Get the value of the width and the height */
   let width = Number(document.getElementById("rectangle-width").value)
   let height = Number(document.getElementById("rectangle-height").value)
+
+  /* Check input values */
+  if ((!isNaN(width) && width >= 0 && document.getElementById("rectangle-width").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("rectangle-height").value != '')) {
+  }
 }
