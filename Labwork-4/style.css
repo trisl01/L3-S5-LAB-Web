@@ -21,3 +21,8 @@ body {
   box-sizing: border-box;
   width: 70%;
 }
+
+h1 {
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+}
