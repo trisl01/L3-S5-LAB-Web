@@ -18,6 +18,8 @@ function circleArea() {
       console.error("Circle's radius: Empty!")
     } else if (radius < 0){
       console.error("Circle's radius: Negative number!")
+    } else {
+      console.error("Circle's radius: Input not a number!")
     }
   }
 }
@@ -44,6 +46,8 @@ function triangleArea() {
       console.error("Triangle's base: empty!")
     } else if (base < 0) {
       console.error("Triangle's base: negative number!")
+    } else if (isNaN(base)) {
+      console.error("Triangle's base: input not a number!")
     }
 
     /* Display error (height only) */
@@ -51,6 +55,8 @@ function triangleArea() {
       console.error("Triangle's vertical height: empty!")
     } else if (height < 0) {
       console.error("Triangle's vertical height: negative number!")
+    } else if (isNaN(height)) {
+      console.error("Triangle's vertical height: input not a number!")
     }
   }
 }
@@ -74,6 +80,8 @@ function squareArea() {
       console.error("Square's length of side: Empty!")
     } else if (length < 0){
       console.error("Square's length of side: Negative number!")
+    } else {
+      console.error("Square's length of side: Input not a number!")
     }
   }
 }
@@ -100,6 +108,8 @@ function rectangleArea() {
       console.error("Rectangle's width: empty!")
     } else if (width < 0) {
       console.error("Rectangle's width: negative number!")
+    } else if (isNaN(width)) {
+      console.error("Rectangle's width: input not a number!")
     }
 
     /* Display error (height only) */
@@ -107,6 +117,8 @@ function rectangleArea() {
       console.error("Rectangle's height: empty!")
     } else if (height < 0) {
       console.error("Rectangle's height: negative number!")
+    } else if (isNaN(height)) {
+      console.error("Rectangle's height: input not a number!")
     }
   }
 }
