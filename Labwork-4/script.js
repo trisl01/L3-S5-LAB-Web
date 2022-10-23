@@ -10,6 +10,8 @@ function circleArea() {
 
   /* Check input value */
   if (!isNaN(radius) && radius >= 0 && document.getElementById("circle-radius").value != '') {
+    /* Remove class error */
+    document.getElementById("circle-radius").classList.remove("error-input")
   } else {
     /* Display error */
     document.getElementById("circle-radius").classList.add("error-input")
@@ -36,6 +38,9 @@ function triangleArea() {
 
   /* Check input values */
   if ((!isNaN(base) && base >= 0 && document.getElementById("triangle-base").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("triangle-height").value != '')) {
+    /* Remove class error */
+    document.getElementById("triangle-base").classList.remove("error-input")
+    document.getElementById("triangle-height").classList.remove("error-input")
   } else {
     /* Display error(s) */
     document.getElementById("triangle-base").classList.add("error-input")
@@ -48,6 +53,9 @@ function triangleArea() {
       console.error("Triangle's base: negative number!")
     } else if (isNaN(base)) {
       console.error("Triangle's base: input not a number!")
+    } else {
+      /* Remove class error */
+      document.getElementById("triangle-base").classList.remove("error-input")
     }
 
     /* Display error (height only) */
@@ -57,6 +65,9 @@ function triangleArea() {
       console.error("Triangle's vertical height: negative number!")
     } else if (isNaN(height)) {
       console.error("Triangle's vertical height: input not a number!")
+    } else {
+      /* Remove class error */
+      document.getElementById("triangle-height").classList.remove("error-input")
     }
   }
 }
@@ -72,6 +83,8 @@ function squareArea() {
 
   /* Check input value */
   if (!isNaN(length) && length >= 0 && document.getElementById("square-length").value != '') {
+    /* Remove class error */
+    document.getElementById("square-length").classList.remove("error-input")
   } else {
     /* Display error */
     document.getElementById("square-length").classList.add("error-input")
@@ -98,6 +111,9 @@ function rectangleArea() {
 
   /* Check input values */
   if ((!isNaN(width) && width >= 0 && document.getElementById("rectangle-width").value != '') && (!isNaN(height) && height >= 0 && document.getElementById("rectangle-height").value != '')) {
+    /* Remove class error */
+    document.getElementById("rectangle-width").classList.remove("error-input")
+    document.getElementById("rectangle-height").classList.remove("error-input")
   } else {
     /* Display error(s) */
     document.getElementById("rectangle-width").classList.add("error-input")
@@ -110,6 +126,9 @@ function rectangleArea() {
       console.error("Rectangle's width: negative number!")
     } else if (isNaN(width)) {
       console.error("Rectangle's width: input not a number!")
+    } else {
+      /* Remove class error */
+      document.getElementById("rectangle-width").classList.remove("error-input")
     }
 
     /* Display error (height only) */
@@ -119,6 +138,9 @@ function rectangleArea() {
       console.error("Rectangle's height: negative number!")
     } else if (isNaN(height)) {
       console.error("Rectangle's height: input not a number!")
+    } else {
+      /* Remove class error */
+      document.getElementById("rectangle-height").classList.remove("error-input")
     }
   }
 }
