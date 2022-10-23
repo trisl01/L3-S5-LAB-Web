@@ -38,3 +38,12 @@ ul {
 ul li a {
   color: var(--color-on-primary-container);
 }
+
+section {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  width: 65%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
