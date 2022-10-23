@@ -1,3 +1,9 @@
+document.getElementById("circle-radius").addEventListener("keydown", function (event) { if (event.key == "Enter") circleArea() })
+document.getElementById("triangle-base").addEventListener("keydown", function (event) { if (event.key == "Enter") triangleArea() })
+document.getElementById("triangle-height").addEventListener("keydown", function (event) { if (event.key == "Enter") triangleArea() })
+document.getElementById("square-length").addEventListener("keydown", function (event) { if (event.key == "Enter") squareArea() })
+document.getElementById("rectangle-width").addEventListener("keydown", function (event) { if (event.key == "Enter") rectangleArea() })
+document.getElementById("rectangle-height").addEventListener("keydown", function (event) { if (event.key == "Enter") rectangleArea() })
 
 
 /* Circle Area */
