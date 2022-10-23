@@ -60,3 +60,9 @@ section input {
   border: none;
   border-radius: 2px;
 }
+
+section input.error-input {
+  border: 3px solid var(--color-error);
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
