@@ -15,6 +15,8 @@ function circleArea() {
     /* Calculate area */
     let area = Math.PI * radius * radius
     console.log(`>> Circle's area = pi * ${radius} * ${radius} = ${area}`)
+    /* Put the area in the input box */
+    document.getElementById("circle-area").value = area
   } else {
     /* Display error */
     document.getElementById("circle-radius").classList.add("error-input")
@@ -47,6 +49,8 @@ function triangleArea() {
     /* Calculate area */
     let area = (base * height) / 2
     console.log(`>> Triangle's area = (${base} * ${height}) / 2 = ${area}`)
+    /* Put the area in the input box */
+    document.getElementById("triangle-area").value = area
   } else {
     /* Display error(s) */
     document.getElementById("triangle-base").classList.add("error-input")
@@ -94,6 +98,8 @@ function squareArea() {
     /* Calculate area */
     let area = length * length
     console.log(`>> Square's area = ${length} * ${length} = ${area}`)
+    /* Put the area in the input box */
+    document.getElementById("square-area").value = area
   } else {
     /* Display error */
     document.getElementById("square-length").classList.add("error-input")
@@ -126,6 +132,8 @@ function rectangleArea() {
     /* Calculate area */
     let area = width * height
     console.log(`>> Rectangle's area = ${width} * ${height} = ${area}`)
+    /* Put the area in the input box */
+    document.getElementById("rectangle-area").value = area
   } else {
     /* Display error(s) */
     document.getElementById("rectangle-width").classList.add("error-input")
