@@ -51,3 +51,12 @@ section {
 section div {
   margin: 10px 0px;
 }
+
+section input {
+  margin-top: 5px;
+  padding: 3px;
+  background-color: none;
+  color: default;
+  border: none;
+  border-radius: 2px;
+}
