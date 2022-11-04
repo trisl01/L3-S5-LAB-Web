@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      body { background-color: var(--color-background); }
+      body {
+        background-color: var(--color-background);
+        color: var(--color-on-background);
+      }
     </style>
   </head>
   <body>
+    <code>View in console</code>
     <script>
       const showInstruments = () => {
         return new Promise((resolve,rejected) => {

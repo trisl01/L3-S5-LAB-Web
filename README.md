@@ -64,3 +64,6 @@
       - DM for division and multiplications
       - AS for addition and subtractions
     - Handling events through HTML attributes
+
+## Quick Lab 1 - JSON
+[Link to the Quick Lab 1](https://trisl01.github.io/L3-S5-LAB-Web/Quick-lab-1)
