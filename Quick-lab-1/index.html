@@ -10,5 +10,29 @@
     </style>
   </head>
   <body>
+    <script>
+      const showInstruments = () => {
+        return new Promise((resolve,rejected) => {
+          const xhr = new XMLHttpRequest
+          xhr.open('GET', "http://api.open-notify.org/astros.json")
+          xhr.onload = function() {
+          if (this.status == 200) {
+            data = JSON.parse(this.responseText)
+            resolve(data)
+          }
+          else {
+            rejected("Connection failed")
+          }
+        }   
+        xhr.send()
+        })
+      }
+
+      showInstruments().then((data) => {
+        console.log("data", data)
+      }).catch((error) => {
+        console.log(error)
+      })
+    </script>
   </body>
 </html>
