@@ -67,3 +67,18 @@
 
 ## Quick Lab 1 - JSON
 [Link to the Quick Lab 1](https://trisl01.github.io/L3-S5-LAB-Web/Quick-lab-1)
+
+## Labwork 5 - JS Essential Review Part 3
+[Link to the Labwork 5](https://trisl01.github.io/L3-S5-LAB-Web/Labwork-5)
+
+This lab-work will be a demonstration of your skills in using HTML form elements, CSS, and some of the JavaScript main topics that include:
+- Defining different variables with local and global scopes
+- Working with some JavaScript built-in (native) functions
+- Creating custom functions and Debugging methods
+- Parsing the DOM
+- Form handling and validation
+- Looping and Conditional statements
+- Events handlers and Events listeners
+- Formulas, and Math Object
+
+A simple website of two pages only for handling the user input using HTML form elements and creating custom functions to imitate/mimic MS Excel commonly used functions.
