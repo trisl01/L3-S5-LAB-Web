@@ -44,3 +44,12 @@ footer {
   font-size: xx-large;
   font-weight: bold;
 }
+
+header a {
+  color: var(--color-on-primary);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+header a:hover {
+  text-decoration: underline;
+}
