@@ -188,6 +188,9 @@ function myExcelFuns() {
     } else {
       result = "Error"
     }
+
+    //? Put the result in the #output
+    document.getElementById("result").value = result
   } else {
   }
 }
