@@ -173,6 +173,21 @@ function myExcelFuns() {
 
   //? Verify if the Array is not empty
   if (numbers.length > 0) {
+    document.getElementById("numbers").classList.remove("error-input")
+
+    //? Run the selected function
+    let result
+    if (document.getElementById("sum").checked) {
+      result = autoSum(numbers)
+    } else if (document.getElementById("avg").checked) {
+      result = average(numbers)
+    } else if (document.getElementById("max").checked) {
+      result = max(numbers)
+    } else if (document.getElementById("min").checked) {
+      result = min(numbers)
+    } else {
+      result = "Error"
+    }
   } else {
   }
 }
