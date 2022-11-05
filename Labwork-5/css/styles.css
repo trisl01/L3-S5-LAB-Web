@@ -99,3 +99,9 @@ form button {
   margin: 5px 20px;
   padding: 7px 20px;
 }
+
+form input.error-input {
+  border-bottom: 1px solid var(--color-error);
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
