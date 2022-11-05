@@ -60,6 +60,20 @@ function isValidHome() {
   }
   return false
 }
+
+function isValidTextId(id) {
+  //? Verify if the id is not null
+  if (id == null) {
+    return false
+  }
+  //? Verify if the text inside the id element is correct
+  if (isValidText(document.getElementById(id).value)) {
+    document.getElementById(id).classList.remove("error-input")
+    return true
+  }
+  document.getElementById(id).classList.add("error-input")
+  return false
+}
   }
 
 function resetErrorsHome() {
