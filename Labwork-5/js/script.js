@@ -30,6 +30,12 @@ function userForm() {
     createNewDivOutput("output-email", "<b>Email:</b> " + email)
     createNewDivOutput("output-address", "<b>Address:</b> " + address + ", " + city + ", " + province + ", " + country)
     createNewDivOutput("output-membership", "<b>Membership:</b> " + membership)
+  } else {
+    //? Display errors on the wrong inputs
+    displayErrorsHome()
+  }
+}
+
 function createNewDivOutput(id, text) {
   //? Verify if there is no <div> with the id
   if (document.getElementById(id) == null) {
