@@ -62,6 +62,16 @@ function isValidHome() {
 }
   }
 
+function resetErrorsHome() {
+  //? Remove all the class .error-input of the input
+  document.getElementById("fname").classList.remove("error-input")
+  document.getElementById("lname").classList.remove("error-input")
+  document.getElementById("email").classList.remove("error-input")
+  document.getElementById("address").classList.remove("error-input")
+  document.getElementById("city").classList.remove("error-input")
+  document.getElementById("province").classList.remove("error-input")
+}
+
 function displayErrorsHome() {
   resetErrorsHome()
 
