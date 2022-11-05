@@ -170,4 +170,9 @@ function myExcelFuns() {
       }
     }
   })
+
+  //? Verify if the Array is not empty
+  if (numbers.length > 0) {
+  } else {
+  }
 }
