@@ -156,4 +156,18 @@ function myExcelFuns() {
 
   //? Transform the String into an Array using the "Space" to cut elements
   let numberArr = numberStr.split(" ")
+
+  //? Create an Array of Number with the old one
+  let numbers = new Array()
+  numberArr.forEach(element => {
+    //? Verify if the element is not null
+    if (element != null && element != "") {
+      let number = Number(element)
+      //? All String who are not a Number is transform to NaN
+      if (!isNaN(number)) {
+        //? Add all the real Number
+        numbers.push(number)
+      }
+    }
+  })
 }
