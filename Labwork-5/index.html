@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TI510M - LAB 5 - Home</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <header>
+      <div id="title">Home</div>
+      <nav>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./excel.html">Excel</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <form id="main-form" name="mainForm" action="#" onsubmit="return false;">
+        <div>
+          <label for="fname"><b>First name</b></label>
+          <input type="text" name="fname" id="fname" autocomplete="given-name" spellcheck="false" value="" required>  
+        </div>
+        <div>
+          <label for="lname"><b>Last name</b></label>
+          <input type="text" name="lname" id="lname" autocomplete="family-name" spellcheck="false" value="" required>  
+        </div>
+        <div>
+          <label for="email"><b>Email address</b></label>
+          <input type="email" name="email" id="email" autocomplete="email" value="" required>
+        </div>
+        <div>
+          <label for="address"><b>Address</b></label>
+          <input type="text" name="address" id="address" autocomplete="address-line1" value="" required>
+        </div>
+        <div>
+          <label for="city"><b>City</b></label>
+          <input type="text" name="city" id="city" autocomplete="address-level2" value="" required>
+        </div>
+        <div>
+          <label for="province"><b>Province</b></label>
+          <input type="text" name="province" id="province" autocomplete="address-level1" value="" maxlength="7" required>
+        </div>
+        <div>
+          <label for="country"><b>Country</b></label>
+          <input type="text" name="country" id="country" value="Canada" readonly>
+        </div>
+        <div>
+          <label for="membership"><b>Membership</b></label>
+          <br>
+          <input type="radio" name="membership" id="premium-membership" value="Premium" checked>
+          <label for="premium-membership">Premium</label>
+          <br>
+          <input type="radio" name="membership" id="standard-membership" value="Standard">
+          <label for="standard-membership">Standard</label>
+          <br>
+          <input type="radio" name="membership" id="basic-membership" value="Basic">
+          <label for="basic-membership">Basic</label>
+        </div>
+        <div class="buttons">
+          <button type="submit" onclick="userForm()">Submit</button>
+          <button type="reset" onclick="resetErrorsHome()">Cancel</button>
+        </div>
+      </form>
+
+      <div id="output">
+
+      </div>
+    </main>
+
+    <footer>
+      <p>ILAC & EFREI Partnership - HTML, CSS, and JavaScript Main Lab-work - Tristan LOYE</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

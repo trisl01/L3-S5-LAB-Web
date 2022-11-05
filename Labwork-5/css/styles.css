@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  font-size: 12pt;
+}
+
+header, main, footer {
+  max-width: 800px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+header, footer {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+main {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+  text-align: center;
+}
+
+#title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+header a {
+  color: var(--color-on-primary);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+header li {
+  margin: 5px;
+  list-style-type: "\2192 \0020";
+}
+
+form {
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+form div {
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="text"], form input[type="email"] {
+  width: 100%;
+  height: 20px;
+  font-size: 10pt;
+  padding: 3px 10px;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--color-on-primary-container);
+  border-radius: 5px 5px 0 0;
+}
+
+form label {
+  font-size: 10pt;
+}
+
+form label b {
+  font-size: 12pt;
+}
+
+form .buttons {
+  text-align: center;
+}
+
+form button {
+  margin: 5px 20px;
+  padding: 7px 20px;
+}
+
+form input.error-input {
+  border-bottom: 1px solid var(--color-error);
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+#output {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#output input {
+  font-size: 10pt;
+  padding: 2px 5px;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  border: none;
+  border-bottom: 1px solid var(--color-on-primary-container);
+}

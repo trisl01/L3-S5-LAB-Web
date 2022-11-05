@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TI510M - LAB 5 - Excel</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tristan Loye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <header>
+      <div id="title">Excel functions</div>
+      <nav>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./excel.html">Excel</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <form id="main-form" name="mainForm" action="#" onsubmit="return false;">
+        <div>
+          <label for="numbers"><b>Enter your numbers separated by spaces:</b></label>
+          <input type="text" name="numbers" id="numbers" required>
+        </div>
+        <div>
+          <input type="radio" name="function" id="sum" value="sum" checked>
+          <label for="sum">AutoSum</label>
+          <br>
+          <input type="radio" name="function" id="avg" value="avg">
+          <label for="avg">Average</label>
+          <br>
+          <input type="radio" name="function" id="max" value="max">
+          <label for="max">Max</label>
+          <br>
+          <input type="radio" name="function" id="min" value="min">
+          <label for="min">Min</label>
+        </div>
+        <div class="buttons">
+          <button type="submit" onclick="myExcelFuns()">Calculate</button>
+        </div>
+      </form>
+
+      <div id="output">
+        <label for="result">Result:</label>
+        <input type="text" name="result" id="result" readonly>
+      </div>
+    </main>
+
+    <footer>
+      <p>ILAC & EFREI Partnership - HTML, CSS, and JavaScript Main Lab-work - Tristan LOYE</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
