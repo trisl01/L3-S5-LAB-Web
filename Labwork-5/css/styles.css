@@ -86,3 +86,7 @@ form input[type="text"], form input[type="email"] {
 form label {
   font-size: 10pt;
 }
+
+form label b {
+  font-size: 12pt;
+}
