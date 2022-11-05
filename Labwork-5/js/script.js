@@ -25,6 +25,11 @@ function userForm() {
 
   //? Test if there is all the correct values
   if (isValidHome()) {
+    //? Add all the informations on the #output
+    createNewDivOutput("output-name", "<b>Full Name:</b> " + fname + " " + lname)
+    createNewDivOutput("output-email", "<b>Email:</b> " + email)
+    createNewDivOutput("output-address", "<b>Address:</b> " + address + ", " + city + ", " + province + ", " + country)
+    createNewDivOutput("output-membership", "<b>Membership:</b> " + membership)
 function isValidHome() {
   //? Verify if all the <div id>
   if (isValidTextId("fname") && isValidTextId("lname") && isValidEmailId("email") && isValidTextId("address") && isValidTextId("city") && isValidTextId("province")) {
