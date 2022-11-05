@@ -90,3 +90,7 @@ form label {
 form label b {
   font-size: 12pt;
 }
+
+form .buttons {
+  text-align: center;
+}
