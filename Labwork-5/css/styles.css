@@ -12,3 +12,12 @@ body {
 	align-items: center;
   font-size: 12pt;
 }
+
+header, main, footer {
+  max-width: 800px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
