@@ -217,3 +217,8 @@ function average(array) {
   });
   return sum/length
 }
+
+function max(array) {
+  //? Find the max of the Array
+  return Math.max(...array)
+}
