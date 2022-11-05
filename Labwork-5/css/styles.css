@@ -39,3 +39,8 @@ main {
 footer {
   text-align: center;
 }
+
+#title {
+  font-size: xx-large;
+  font-weight: bold;
+}
