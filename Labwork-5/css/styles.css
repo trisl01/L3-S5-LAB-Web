@@ -26,3 +26,12 @@ header, footer {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
 }
+
+main {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
