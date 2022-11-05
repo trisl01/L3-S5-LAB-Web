@@ -111,3 +111,12 @@ form input.error-input {
   padding: 10px;
   box-sizing: border-box;
 }
+
+#output input {
+  font-size: 10pt;
+  padding: 2px 5px;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  border: none;
+  border-bottom: 1px solid var(--color-on-primary-container);
+}
