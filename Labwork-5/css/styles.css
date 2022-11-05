@@ -53,3 +53,8 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
+
+header li {
+  margin: 5px;
+  list-style-type: "\2192 \0020";
+}
