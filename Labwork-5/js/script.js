@@ -150,4 +150,7 @@ function displayErrorsHome() {
 
 function myExcelFuns() {
   console.info("Submit - Excel")
+
+  //? Get the String value of the input
+  let numberStr = document.getElementById("numbers").value
 }
