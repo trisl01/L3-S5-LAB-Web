@@ -63,3 +63,9 @@ form {
   max-width: 500px;
   box-sizing: border-box;
 }
+
+form div {
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
