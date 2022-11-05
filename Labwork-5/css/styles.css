@@ -58,3 +58,8 @@ header li {
   margin: 5px;
   list-style-type: "\2192 \0020";
 }
+
+form {
+  max-width: 500px;
+  box-sizing: border-box;
+}
