@@ -83,6 +83,19 @@ function isValidTextId(id) {
   return false
 }
 
+function isValidEmail(email) {
+  //? Verify if the email is not null
+  if (email == null || email == "") {
+    return false
+  }
+  //? Verify if the email is an email
+  let regexEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!regexEmail.test(email)) {
+    return false
+  }
+  return true
+}
+
 function isValidEmailId(id) {
   //? Verify if the id is not null
   if (id == null) {
