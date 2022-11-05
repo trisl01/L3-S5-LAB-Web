@@ -30,6 +30,22 @@ function userForm() {
     createNewDivOutput("output-email", "<b>Email:</b> " + email)
     createNewDivOutput("output-address", "<b>Address:</b> " + address + ", " + city + ", " + province + ", " + country)
     createNewDivOutput("output-membership", "<b>Membership:</b> " + membership)
+function createNewDivOutput(id, text) {
+  //? Verify if there is no <div> with the id
+  if (document.getElementById(id) == null) {
+    //? Create a new <div> and put it on the #output
+    console.log("new " + id)
+    let newDiv = document.createElement("div")
+    newDiv.className = ""
+    newDiv.id = id
+    newDiv.innerHTML = text
+    document.getElementById("output").appendChild(newDiv)
+  } else {
+    //? Change the current <div id> with the new information
+    console.log("update " + id)
+    document.getElementById(id).innerHTML = text
+  }
+}
 function isValidHome() {
   //? Verify if all the <div id>
   if (isValidTextId("fname") && isValidTextId("lname") && isValidEmailId("email") && isValidTextId("address") && isValidTextId("city") && isValidTextId("province")) {
