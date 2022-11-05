@@ -105,3 +105,9 @@ form input.error-input {
   background-color: var(--color-error-container);
   color: var(--color-on-error-container);
 }
+
+#output {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
