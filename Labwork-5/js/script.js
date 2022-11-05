@@ -197,3 +197,12 @@ function myExcelFuns() {
     document.getElementById("result").value = "Wrong input!"
   }
 }
+
+function autoSum(array) {
+  //? Sum all the elements inside the Array
+  let sum = 0
+  array.forEach(element => {
+    sum += element
+  });
+  return sum
+}
