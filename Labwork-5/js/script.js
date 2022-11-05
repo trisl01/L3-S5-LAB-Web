@@ -148,6 +148,9 @@ function displayErrorsHome() {
 //! -----------------------------------------------------------------------------------------------
 
 
+//? Listen if the user press "Enter" and run the function automatically
+document.getElementById("numbers").addEventListener("keydown", function (event) { if (event.key == "Enter") myExcelFuns() })
+
 function myExcelFuns() {
   console.info("Submit - Excel")
 
