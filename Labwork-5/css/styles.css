@@ -21,3 +21,8 @@ header, main, footer {
   box-sizing: border-box;
   border-radius: 5px;
 }
+
+header, footer {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
