@@ -22,6 +22,10 @@ function userForm() {
   } else if (document.getElementById("basic-membership").checked) {
     membership = document.getElementById("basic-membership").value
   }
+
+  //? Test if there is all the correct values
+  if (isValidHome()) {
+  }
 }
 
 
