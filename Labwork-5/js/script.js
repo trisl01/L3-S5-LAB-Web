@@ -61,6 +61,14 @@ function isValidHome() {
   return false
 }
 
+function isValidText(text) {
+  //? Verify if the text is not null
+  if (text == null || text == "") {
+    return false
+  }
+  return true
+}
+
 function isValidTextId(id) {
   //? Verify if the id is not null
   if (id == null) {
