@@ -153,4 +153,7 @@ function myExcelFuns() {
 
   //? Get the String value of the input
   let numberStr = document.getElementById("numbers").value
+
+  //? Transform the String into an Array using the "Space" to cut elements
+  let numberArr = numberStr.split(" ")
 }
