@@ -206,3 +206,14 @@ function autoSum(array) {
   });
   return sum
 }
+
+function average(array) {
+  //? Calculate the average of the Array
+  let sum = 0
+  let length = 0
+  array.forEach(element => {
+    sum += element
+    length++
+  });
+  return sum/length
+}
