@@ -192,5 +192,8 @@ function myExcelFuns() {
     //? Put the result in the #output
     document.getElementById("result").value = result
   } else {
+    //? Display error
+    document.getElementById("numbers").classList.add("error-input")
+    document.getElementById("result").value = "Wrong input!"
   }
 }
