@@ -82,7 +82,20 @@ function isValidTextId(id) {
   document.getElementById(id).classList.add("error-input")
   return false
 }
+
+function isValidEmailId(id) {
+  //? Verify if the id is not null
+  if (id == null) {
+    return false
   }
+  //? Verify if the email inside the id element is correct
+  if (isValidEmail(document.getElementById(id).value)) {
+    document.getElementById(id).classList.remove("error-input")
+    return true
+  }
+  document.getElementById(id).classList.add("error-input")
+  return false
+}
 
 function resetErrorsHome() {
   //? Remove all the class .error-input of the input
