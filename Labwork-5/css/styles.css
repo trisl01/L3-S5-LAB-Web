@@ -94,3 +94,8 @@ form label b {
 form .buttons {
   text-align: center;
 }
+
+form button {
+  margin: 5px 20px;
+  padding: 7px 20px;
+}
