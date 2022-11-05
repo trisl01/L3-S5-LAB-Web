@@ -82,3 +82,7 @@ form input[type="text"], form input[type="email"] {
   border-bottom: 1px solid var(--color-on-primary-container);
   border-radius: 5px 5px 0 0;
 }
+
+form label {
+  font-size: 10pt;
+}
