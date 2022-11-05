@@ -25,6 +25,13 @@ function userForm() {
 
   //? Test if there is all the correct values
   if (isValidHome()) {
+function isValidHome() {
+  //? Verify if all the <div id>
+  if (isValidTextId("fname") && isValidTextId("lname") && isValidEmailId("email") && isValidTextId("address") && isValidTextId("city") && isValidTextId("province")) {
+    return true
+  }
+  return false
+}
   }
 }
 
