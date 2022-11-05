@@ -52,6 +52,7 @@ function createNewDivOutput(id, text) {
     document.getElementById(id).innerHTML = text
   }
 }
+
 function isValidHome() {
   //? Verify if all the <div id>
   if (isValidTextId("fname") && isValidTextId("lname") && isValidEmailId("email") && isValidTextId("address") && isValidTextId("city") && isValidTextId("province")) {
@@ -60,6 +61,19 @@ function isValidHome() {
   return false
 }
   }
+
+function displayErrorsHome() {
+  resetErrorsHome()
+
+  console.warn("Errors!")
+
+  //? Verify and put class .error-input if not correct
+  isValidTextId("fname")
+  isValidTextId("lname")
+  isValidEmailId("email")
+  isValidTextId("address")
+  isValidTextId("city")
+  isValidTextId("province")
 }
 
 
