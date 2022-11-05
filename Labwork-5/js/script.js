@@ -222,3 +222,8 @@ function max(array) {
   //? Find the max of the Array
   return Math.max(...array)
 }
+
+function min(array) {
+  //? Find the min of the Array
+  return Math.min(...array)
+}
