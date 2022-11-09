@@ -21,27 +21,27 @@
       <form id="main-form" name="mainForm" action="#" onsubmit="return false;">
         <div>
           <label for="fname"><b>First name</b></label>
-          <input type="text" name="fname" id="fname" autocomplete="given-name" spellcheck="false" value="" required>  
+          <input type="text" name="fname" id="fname" autocomplete="given-name" spellcheck="false" value="" onkeyup="isValidTextId('fname')" required>
         </div>
         <div>
           <label for="lname"><b>Last name</b></label>
-          <input type="text" name="lname" id="lname" autocomplete="family-name" spellcheck="false" value="" required>  
+          <input type="text" name="lname" id="lname" autocomplete="family-name" spellcheck="false" value="" onkeyup="isValidTextId('lname')" required>
         </div>
         <div>
           <label for="email"><b>Email address</b></label>
-          <input type="email" name="email" id="email" autocomplete="email" value="" required>
+          <input type="email" name="email" id="email" autocomplete="email" value="" onkeyup="isValidEmailId('email')" required>
         </div>
         <div>
           <label for="address"><b>Address</b></label>
-          <input type="text" name="address" id="address" autocomplete="address-line1" value="" required>
+          <input type="text" name="address" id="address" autocomplete="address-line1" value="" onkeyup="isValidTextId('address')" required>
         </div>
         <div>
           <label for="city"><b>City</b></label>
-          <input type="text" name="city" id="city" autocomplete="address-level2" value="" required>
+          <input type="text" name="city" id="city" autocomplete="address-level2" value="" onkeyup="isValidTextId('city')" required>
         </div>
         <div>
           <label for="province"><b>Province</b></label>
-          <input type="text" name="province" id="province" autocomplete="address-level1" value="" maxlength="7" required>
+          <input type="text" name="province" id="province" autocomplete="address-level1" value="" maxlength="7" onkeyup="isValidTextId('province')" required>
         </div>
         <div>
           <label for="country"><b>Country</b></label>

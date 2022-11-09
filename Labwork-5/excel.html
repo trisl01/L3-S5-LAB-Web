@@ -21,7 +21,7 @@
       <form id="main-form" name="mainForm" action="#" onsubmit="return false;">
         <div>
           <label for="numbers"><b>Enter your numbers separated by spaces:</b></label>
-          <input type="text" name="numbers" id="numbers" required>
+          <input type="text" name="numbers" id="numbers" onkeyup="isValidNumberStrDisplay('numbers')" required>
         </div>
         <div>
           <input type="radio" name="function" id="sum" value="sum" checked>
