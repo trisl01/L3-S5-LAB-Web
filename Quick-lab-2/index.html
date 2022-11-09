@@ -39,6 +39,27 @@
           } else {
           }
         })
+
+        function addUser(dataUser) {
+          //? Create a new user
+          const newUser = document.createElement('div')
+          newUser.classList = "user"
+
+          const newUserPicture = document.createElement('div')
+          newUserPicture.classList = "user-picture"
+          //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].thumbnail+"')"
+          newUserPicture.style.backgroundImage = "url('"+dataUser["picture"].medium+"')"
+          //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].large+"')"
+          
+          const newUserName = document.createElement('div')
+          newUserName.classList = "user-name"
+          newUserName.textContent = dataUser["name"].first + " " + dataUser["name"].last
+
+          newUser.append(newUserPicture, newUserName)
+
+          //? Add to the main <div>
+          document.getElementById("users-wrap").appendChild(newUser)
+        }
     </script>
   </body>
 </html>
