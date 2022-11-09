@@ -18,6 +18,7 @@
 
       //? Fetch the API to get the JSON
       fetch("https://randomuser.me/api/?nat=ca&results=" + numberOfUsers)
+        .then((response) => response.json())
     </script>
   </body>
 </html>
