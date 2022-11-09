@@ -25,6 +25,12 @@
           if (data.error == null) {
             //? Get the table of users
             let dataUser = data.results
+
+            //? Create a new <div> to put every users in
+            let newBlock = document.createElement('div')
+            newBlock.classList = "block-users"
+            newBlock.id = "users-wrap"
+            document.getElementById("users-container").appendChild(newBlock)
           } else {
           }
         })
