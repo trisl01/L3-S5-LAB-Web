@@ -82,3 +82,6 @@ This lab-work will be a demonstration of your skills in using HTML form elements
 - Formulas, and Math Object
 
 A simple website of two pages only for handling the user input using HTML form elements and creating custom functions to imitate/mimic MS Excel commonly used functions.
+
+## Quick Lab 2 - Fetch JSON with API
+[Link to the Quick Lab 2](https://trisl01.github.io/L3-S5-LAB-Web/Quick-lab-2)
