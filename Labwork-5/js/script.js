@@ -4,12 +4,15 @@
 
 
 //? Listen if the user press "Enter" and run the function automatically
-document.getElementById("fname").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
-document.getElementById("lname").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
-document.getElementById("email").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
-document.getElementById("address").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
-document.getElementById("city").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
-document.getElementById("province").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+if (document.location.pathname.endsWith("/index.html") || document.location.pathname.endsWith("/")) {
+  document.getElementById("fname").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+  document.getElementById("lname").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+  document.getElementById("email").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+  document.getElementById("address").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+  document.getElementById("city").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+  document.getElementById("province").addEventListener("keydown", function (event) { if (event.key == "Enter") userForm() })
+}
+
 
 function userForm() {
   console.info("Submit - Home")
@@ -149,7 +152,9 @@ function displayErrorsHome() {
 
 
 //? Listen if the user press "Enter" and run the function automatically
-document.getElementById("numbers").addEventListener("keydown", function (event) { if (event.key == "Enter") myExcelFuns() })
+if (document.location.pathname.endsWith("/excel.html")) {
+  document.getElementById("numbers").addEventListener("keydown", function (event) { if (event.key == "Enter") myExcelFuns() })
+}
 
 function myExcelFuns() {
   console.info("Submit - Excel")
