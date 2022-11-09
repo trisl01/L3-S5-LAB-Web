@@ -31,6 +31,11 @@
             newBlock.classList = "block-users"
             newBlock.id = "users-wrap"
             document.getElementById("users-container").appendChild(newBlock)
+
+            //? Add every users inside the JSON
+            for (let i = 0; i < dataUser.length; i++) {
+              addUser(dataUser[i])
+            }
           } else {
           }
         })
