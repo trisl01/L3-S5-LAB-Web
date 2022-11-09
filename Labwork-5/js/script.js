@@ -74,7 +74,7 @@ function isValidHome() {
 
 function isValidText(text) {
   //? Verify if the text is not null
-  if (text == null || text == "") {
+  if (text == null || text == "" || text === undefined) {
     return false
   }
   return true
@@ -96,7 +96,7 @@ function isValidTextId(id) {
 
 function isValidEmail(email) {
   //? Verify if the email is not null
-  if (email == null || email == "") {
+  if (email == null || email == "" || email === undefined) {
     return false
   }
   //? Verify if the email is an email
