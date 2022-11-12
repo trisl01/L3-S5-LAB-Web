@@ -10,5 +10,9 @@
   "L1-services": {
     "name": "Labwork 1 - Services",
     "pathname": "/Labwork-1/services.html"
+  },
+  "L1-contact": {
+    "name": "Labwork 1 - Contact",
+    "pathname": "/Labwork-1/contact.html"
   }
 }
