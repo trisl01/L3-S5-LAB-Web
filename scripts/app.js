@@ -46,3 +46,11 @@ function next() {
     sessionStorage.recentlyOpen = pathname
   }
 }
+
+function searchOnDataPathTable(data, search) {
+  if (data[search] != null || data[search] != undefined) {
+    return data[search]
+  } else {
+    return null
+  }
+}
