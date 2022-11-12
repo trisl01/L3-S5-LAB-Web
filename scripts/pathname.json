@@ -18,5 +18,9 @@
   "L2": {
     "name": "Labwork 2",
     "pathname": "/Labwork-2/"
+  },
+  "L2-about": {
+    "name": "Labwork 2 - About",
+    "pathname": "/Labwork-2/about.html"
   }
 }
