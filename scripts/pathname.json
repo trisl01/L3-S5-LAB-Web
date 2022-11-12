@@ -30,5 +30,9 @@
   "L2-contact": {
     "name": "Labwork 2 - Contact",
     "pathname": "/Labwork-2/contact.html"
+  },
+  "L3": {
+    "name": "Labwork 3",
+    "pathname": "/Labwork-3/"
   }
 }
