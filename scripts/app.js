@@ -54,3 +54,12 @@ function searchOnDataPathTable(data, search) {
     return null
   }
 }
+
+function searchFromPathnameOnDataPathTable(data, pathname) {
+  for(key in data) {
+    if(data[key].pathname == pathname) {
+      return data[key]
+    }
+  }
+  return null
+}
