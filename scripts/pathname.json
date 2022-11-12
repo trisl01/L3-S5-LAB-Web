@@ -50,5 +50,9 @@
   "L4": {
     "name": "Labwork 4",
     "pathname": "/Labwork-4/"
+  },
+  "QL1": {
+    "name": "Quick Lab 1",
+    "pathname": "/Quick-lab-1/"
   }
 }
