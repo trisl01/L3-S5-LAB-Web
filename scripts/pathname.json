@@ -26,5 +26,9 @@
   "L2-services": {
     "name": "Labwork 2 - Services",
     "pathname": "/Labwork-2/services.html"
+  },
+  "L2-contact": {
+    "name": "Labwork 2 - Contact",
+    "pathname": "/Labwork-2/contact.html"
   }
 }
