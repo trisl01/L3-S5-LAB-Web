@@ -1,0 +1,127 @@
+/* primary */
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.primary-container {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.inverse-primary {
+  background-color: var(--color-inverse-primary);
+}
+.inverse-primary-text {
+  color: var(--color-inverse-primary);
+}
+
+
+/* secondary */
+.secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+}
+
+.secondary-container {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+
+/* tertiary */
+.tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-on-tertiary);
+}
+
+.tertiary-container {
+  background-color: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
+}
+
+
+/* error */
+.error {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+}
+
+.error-container {
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+
+/* background */
+.background {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+
+/* surface */
+.surface {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.surface-variant {
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+}
+
+.inverse-surface {
+  background-color: var(--color-inverse-surface);
+  color: var(--color-inverse-on-surface);
+}
+
+.inverse-on-surface {
+  background-color: var(--color-inverse-on-surface);
+  color: var(--color-inverse-surface);
+}
+
+
+/* outline */
+.outline {
+  background-color: var(--color-outline);
+}
+
+.outline-text {
+  color: var(--color-outline);
+}
+
+.outline-variant {
+  background-color: var(--color-outline-variant);
+}
+.outline-variant-text {
+  color: var(--color-outline-variant);
+}
+
+
+/* shadow */
+.shadow {
+  background-color: var(--color-shadow);
+}
+
+.shadow-text {
+  color: var(--color-shadow);
+}
+
+
+/* surface tint */
+.surface-tint {
+  background-color: var(--color-surface-tint);
+}
+.surface-tint-text {
+  color: var(--color-surface-tint);
+}
+
+
+/* scrim */
+.scrim {
+  background-color: var(--color-scrim);
+}
+.scrim-text {
+  color: var(--color-scrim);
+}
