@@ -1,5 +1,8 @@
+let newLab = "L5"
 
 let dataPath
+let newLabPath
+
 fetch('/scripts/pathname.json')
   .then((response) => response.json())
   .then(function (data) {
