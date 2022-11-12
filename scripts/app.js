@@ -7,6 +7,7 @@ window.addEventListener( "pageshow", function ( event ) {
 })
 
 let newLab = "L5"
+let nameRepo = "/L3-S5-LAB-Web/"
 
 let dataPath
 let newLabPath
@@ -21,8 +22,9 @@ fetch('/scripts/pathname.json')
 
 function next() {
   let recentlyOpen
+  let currentPathname = pathnameWithoutNameFolder(document.location.pathname)
 
-  if (document.location.pathname.length == 1 || document.location.pathname.startsWith("/index.html")) {
+  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html")) {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
     document.getElementById("new-lab-label").innerHTML = newLabPath["name"]
     document.getElementById("new-lab").setAttribute('href', newLabPath["pathname"])
@@ -37,24 +39,23 @@ function next() {
       document.getElementById("recent-lab").style.visibility = "hidden"
     }
   } else {
-    let pathname = document.location.pathname
-    if (document.location.pathname.endsWith("index.html")) {
-      let newPathname = pathname
+    if (currentPathname.endsWith("index.html")) {
+      let newPathname = currentPathname
       for (let i = 0; i < 100; i++) {
-        if (pathname == newPathname && document.location.pathname.startsWith("/Labwork-"+i+"/")) {
+        if (currentPathname == newPathname && currentPathname.startsWith("/Labwork-"+i+"/")) {
           newPathname = "/Labwork-"+i+"/"
         }
       }
-      if (pathname == newPathname) {
+      if (currentPathname == newPathname) {
         for (let i = 0; i < 100; i++) {
-          if (pathname == newPathname && document.location.pathname.startsWith("/Quick-lab-"+i+"/")) {
+          if (currentPathname == newPathname && currentPathname.startsWith("/Quick-lab-"+i+"/")) {
             newPathname = "/Quick-lab-"+i+"/"
           }
         }
       }
-      pathname = newPathname
+      currentPathname = newPathname
     }
-    sessionStorage.recentlyOpen = pathname
+    sessionStorage.recentlyOpen = currentPathname
   }
 }
 
@@ -68,9 +69,22 @@ function searchOnDataPathTable(data, search) {
 
 function searchFromPathnameOnDataPathTable(data, pathname) {
   for(key in data) {
-    if(data[key].pathname == pathname) {
+    if(data[key].pathname == pathnameWithoutNameFolder(pathname)) {
       return data[key]
     }
   }
   return null
+}
+
+function pathnameWithoutNameFolder(pathname) {
+  if (pathname.startsWith(nameRepo)) {
+    let path = window.location.pathname.split("/")
+    let pathnameStr = "/"
+    for (let i = 1; i < path.length; i++) {
+      pathnameStr += path[i] + "/"
+    }
+    return pathnameStr
+  } else {
+    return pathname
+  }
 }
