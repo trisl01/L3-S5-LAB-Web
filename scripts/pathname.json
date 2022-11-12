@@ -55,6 +55,10 @@
     "name": "Labwork 5",
     "pathname": "/Labwork-5/"
   },
+  "L5-excel": {
+    "name": "Labwork 5 - Excel",
+    "pathname": "/Labwork-5/excel.html"
+  },
   "QL1": {
     "name": "Quick Lab 1",
     "pathname": "/Quick-lab-1/"
