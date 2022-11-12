@@ -68,8 +68,14 @@
           <label for="basic-membership">Basic</label>
         </div>
         <div class="buttons">
-          <button type="submit" onclick="userForm()">Submit</button>
-          <button type="reset" onclick="resetErrorsHome()">Cancel</button>
+          <button type="submit" class="button-primary fill" onclick="userForm()">
+            <i class="bi bi-check-circle"></i>
+            <label class="margin-left-10px">Submit</label>
+          </button>
+          <button type="reset" class="button-error fill" onclick="resetErrorsHome()">
+            <i class="bi bi-x-circle"></i>
+            <label class="margin-left-10px">Cancel</label>
+          </button>
         </div>
       </form>
 
