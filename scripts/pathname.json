@@ -38,5 +38,9 @@
   "L3-P1": {
     "name": "Labwork 3 - Part 1",
     "pathname": "/Labwork-3/part-1.html"
+  },
+  "L3-P2": {
+    "name": "Labwork 3 - Part 2",
+    "pathname": "/Labwork-3/part-2.html"
   }
 }
