@@ -1,0 +1,19 @@
+#index li a {
+  color: var(--color-on-surface-variant);
+  background-color: transparent;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#index li a:hover {
+  background-color: var(--palette-var-neutral-variant80);
+}
+#index li a:active {
+  background-color: var(--palette-var-neutral-variant70);
+}
+
+#index li {
+  margin: 5px 0px;
+  list-style-type: none;
+}
