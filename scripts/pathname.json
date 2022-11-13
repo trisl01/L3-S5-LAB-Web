@@ -1,0 +1,70 @@
+{
+  "L1": {
+    "name": "Labwork 1",
+    "pathname": "/Labwork-1/"
+  },
+  "L1-about": {
+    "name": "Labwork 1 - About",
+    "pathname": "/Labwork-1/about.html"
+  },
+  "L1-services": {
+    "name": "Labwork 1 - Services",
+    "pathname": "/Labwork-1/services.html"
+  },
+  "L1-contact": {
+    "name": "Labwork 1 - Contact",
+    "pathname": "/Labwork-1/contact.html"
+  },
+  "L2": {
+    "name": "Labwork 2",
+    "pathname": "/Labwork-2/"
+  },
+  "L2-about": {
+    "name": "Labwork 2 - About",
+    "pathname": "/Labwork-2/about.html"
+  },
+  "L2-services": {
+    "name": "Labwork 2 - Services",
+    "pathname": "/Labwork-2/services.html"
+  },
+  "L2-contact": {
+    "name": "Labwork 2 - Contact",
+    "pathname": "/Labwork-2/contact.html"
+  },
+  "L3": {
+    "name": "Labwork 3",
+    "pathname": "/Labwork-3/"
+  },
+  "L3-P1": {
+    "name": "Labwork 3 - Part 1",
+    "pathname": "/Labwork-3/part-1.html"
+  },
+  "L3-P2": {
+    "name": "Labwork 3 - Part 2",
+    "pathname": "/Labwork-3/part-2.html"
+  },
+  "L3-P3": {
+    "name": "Labwork 3 - Part 3",
+    "pathname": "/Labwork-3/part-3.html"
+  },
+  "L4": {
+    "name": "Labwork 4",
+    "pathname": "/Labwork-4/"
+  },
+  "L5": {
+    "name": "Labwork 5",
+    "pathname": "/Labwork-5/"
+  },
+  "L5-excel": {
+    "name": "Labwork 5 - Excel",
+    "pathname": "/Labwork-5/excel.html"
+  },
+  "QL1": {
+    "name": "Quick Lab 1",
+    "pathname": "/Quick-lab-1/"
+  },
+  "QL2": {
+    "name": "Quick Lab 2",
+    "pathname": "/Quick-lab-2/"
+  }
+}
