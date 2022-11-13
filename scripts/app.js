@@ -12,7 +12,7 @@ let nameRepo = "/L3-S5-LAB-Web/"
 let dataPath
 let newLabPath
 
-fetch('/scripts/pathname.json')
+fetch('./scripts/pathname.json')
   .then((response) => response.json())
   .then(function (data) {
     dataPath = data
