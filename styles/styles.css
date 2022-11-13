@@ -9,7 +9,7 @@ body {
   font-size: 12px;
 }
 
-header, nav, section, main, footer {
+header, nav, section, main, footer, #backToIndex {
   width: 90%;
   max-width: 900px;
   box-sizing: border-box;
@@ -60,8 +60,24 @@ button, .button, .button-primary, .button-secondary, .button-error {
   text-decoration: none;
   transition: all 0.3s;
 }
-button label, .button label, .button-primary label, .button-secondary label, .button-error label {
+a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
   cursor: pointer;
+}
+
+#backToIndex a, .little-button {
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 12px;
+}
+#backToIndex a:hover, .little-button:hover {
+  background-color: var(--palette-var-neutral-variant80);
+}
+#backToIndex a:active, .little-button:active {
+  background-color: var(--palette-var-neutral-variant70);
 }
 
 .button-primary {
