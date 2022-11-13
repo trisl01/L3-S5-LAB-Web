@@ -5,24 +5,53 @@
     <meta charset="utf-8">
     <meta name="author" content="Tristan Loye">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../styles/theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../styles/index.css" rel="stylesheet" type="text/css" media="all">
   </head>
-  <body>
+  <body id="index" class="container-flex-column-center">
     <header>
       TI510M - LAB 3 - JavaScript - Index
     </header>
-    <div class="section">
+
+    <section>
       <ul>
-        <li id="back"><a href="../">back</a></li>
-        <li><a href="TI510M-Web-Labwork-3.pdf">Subject</a></li>
-        <li><a href="part-1.html">Part 1</a></li>
-        <li><a href="part-2.html">Part 2</a></li>
-        <li><a href="part-3.html">Part 3</a></li>
+        <li>
+          <a class="button" href="../">
+            <i class="bi bi-arrow-left"></i>
+            <label class="margin-left-10px">back</label>
+          </a>
+        </li>
+        <li>
+          <a class="button" href="./TI510M-Web-Labwork-3.pdf">
+            <i class="bi bi-filetype-pdf"></i>
+            <label class="margin-left-10px">Subject</label>
+          </a>
+        </li>
+        <li>
+          <a class="button" href="./part-1.html">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Part 1</label>
+          </a>
+        </li>
+        <li>
+          <a class="button" href="./part-2.html">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Part 2</label>
+          </a>
+        </li>
+        <li>
+          <a class="button" href="./part-3.html">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Part 3</label>
+          </a>
+        </li>
       </ul>
-    </div>
+    </section>
+
     <footer>
-      By Tristan Loye - Efrei L3
+      By Tristan Loye - Efrei L3-S5
     </footer>
+
+    <script src="../scripts/app.js"></script>
   </body>
 </html>

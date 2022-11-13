@@ -12,6 +12,7 @@ body {
   align-items: center;
 }
 
+
 .block-users {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +22,7 @@ body {
 }
 
 .user {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +30,10 @@ body {
   margin: 10px 0;
   width: 200px;
   text-align: center;
+  border-radius: 10px;
+}
+.user:hover {
+  background-color: var(--palette-var-neutral-variant80);
 }
 
 .user-picture {

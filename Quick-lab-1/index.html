@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Tristan Loye">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../styles/theme.css" rel="stylesheet" type="text/css" media="all">
     <style>
       body {
         background-color: var(--color-background);
@@ -13,8 +13,24 @@
       }
     </style>
   </head>
-  <body>
-    <code>View in console</code>
+  <body class="container-flex-column-center">
+    <div id="backToIndex" class="container-flex-row">
+      <a href="../">
+        <i class="bi bi-arrow-left"></i>
+        <label class="margin-left-10px"><code>Back to index</code></label>
+      </a>
+    </div>
+
+    <header>
+      Quick Lab 1
+    </header>
+
+    <main class="container-flex-column-center">
+      <code>View in console</code>
+    </main>
+
+    <footer></footer>
+
     <script>
       const showInstruments = () => {
         return new Promise((resolve,rejected) => {
@@ -39,5 +55,6 @@
         console.log(error)
       })
     </script>
+    <script src="../scripts/app.js"></script>
   </body>
 </html>

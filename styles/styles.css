@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+header, nav, section, main, footer, #backToIndex {
+  width: 90%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+header {
+  margin: 10px;
+  padding: 10px;
+  font-size: 36px;
+}
+
+main, section, nav {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav {
+  font-size: 20px;
+}
+
+main, section {
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+  font-size: 18px;
+}
+
+footer {
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button, .button, .button-primary, .button-secondary, .button-error {
+  margin: 4px 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
+  cursor: pointer;
+}
+
+#backToIndex a, .little-button {
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 12px;
+}
+#backToIndex a:hover, .little-button:hover {
+  background-color: var(--palette-var-neutral-variant80);
+}
+#backToIndex a:active, .little-button:active {
+  background-color: var(--palette-var-neutral-variant70);
+}
+
+.button-primary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.button-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.button-primary:active {
+  background-color: var(--palette-var-primary35);
+  color: var(--color-on-primary);
+  border: 1px solid var(--palette-var-primary35);
+}
+
+.button-primary.fill {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: 1px solid var(--color-primary);
+}
+.button-primary.fill:hover {
+  background-color: transparent;
+  color: var(--palette-var-primary35);
+  border: 1px solid var(--palette-var-primary35);
+}
+.button-primary.fill:active {
+  background-color: transparent;
+  color: var(--palette-var-primary30);
+  border: 1px solid var(--palette-var-primary30);
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+.button-secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+}
+.button-secondary:active {
+  background-color: var(--palette-var-secondary35);
+  color: var(--color-on-secondary);
+  border: 1px solid var(--palette-var-secondary35);
+}
+
+.button-secondary.fill {
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+  border: 1px solid var(--color-secondary);
+}
+.button-secondary.fill:hover {
+  background-color: transparent;
+  color: var(--palette-var-secondary35);
+  border: 1px solid var(--palette-var-secondary35);
+}
+.button-secondary.fill:active {
+  background-color: transparent;
+  color: var(--palette-var-secondary30);
+  border: 1px solid var(--palette-var-secondary30);
+}
+
+.button-error {
+  background-color: transparent;
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+.button-error:hover {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+}
+.button-error:active {
+  background-color: var(--palette-var-error35);
+  color: var(--color-on-error);
+  border: 1px solid var(--palette-var-error35);
+}
+
+.button-error.fill {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+  border: 1px solid var(--color-error);
+}
+.button-error.fill:hover {
+  background-color: transparent;
+  color: var(--palette-var-error35);
+  border: 1px solid var(--palette-var-error35);
+}
+.button-error.fill:active {
+  background-color: transparent;
+  color: var(--palette-var-error30);
+  border: 1px solid var(--palette-var-error30);
+}
+
+.button-surface-variant {
+  color: var(--color-on-surface-variant);
+  background-color: transparent;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.button-surface-variant:hover {
+  background-color: var(--palette-var-neutral-variant80);
+}
+.button-surface-variant:active {
+  background-color: var(--palette-var-neutral-variant70);
+}
+
+.container-info {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+a.button, a.button-primary, a.button-secondary, a.button-error {
+  text-decoration: none;
+}
+
+.container-flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.container-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  font-size: 20px;
+  box-sizing: border-box;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.margin-0px {
+  margin: 0;
+}
+.margin-left-5px {
+  margin-left: 5px;
+}
+.margin-left-10px {
+  margin-left: 10px;
+}
+.margin-left-15px {
+  margin-left: 15px;
+}
+.margin-left-20px {
+  margin-left: 20px;
+}
+

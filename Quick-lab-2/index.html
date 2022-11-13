@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta name="author" content="Tristan Loye">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/colors.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../styles/theme.css" rel="stylesheet" type="text/css" media="all">
     <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
+    <div id="backToIndex" class="container-flex-row">
+      <a href="../">
+        <i class="bi bi-arrow-left"></i>
+        <label class="margin-left-10px"><code>Back to index</code></label>
+      </a>
+    </div>
+
+    <header>
+      Quick Lab 2
+    </header>
+
     <div id="error-container"></div>
-    <div id="users-container"></div>
+
+    <main id="users-container">Loading...</main>
+
+    <footer></footer>
 
     <script>
       //? Settings
@@ -21,6 +35,8 @@
         .then((response) => response.json())
         .then(function (data) {
           console.log(data)
+
+          document.getElementById("users-container").innerHTML = ""
 
           if (data.error == null) {
             //? Get the table of users
@@ -42,6 +58,7 @@
             newErrorJson.innerHTML = "<u><b>API respond:</b></u><br>" + data.error
             document.getElementById("error-container").appendChild(newErrorJson)
             document.getElementById("error-container").classList.add("error-json")
+            document.getElementById("users-container").style.visibility = "hidden"
           }
         })
 
@@ -66,5 +83,6 @@
           document.getElementById("users-wrap").appendChild(newUser)
         }
     </script>
+    <script src="../scripts/app.js"></script>
   </body>
 </html>
