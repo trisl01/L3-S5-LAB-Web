@@ -28,9 +28,9 @@ function next() {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
     document.getElementById("new-lab-label").innerHTML = newLabPath["name"]
     document.getElementById("new-lab").setAttribute('href', newLabPath["pathname"])
-    //console.log(sessionStorage.recentlyOpen)
-    if (sessionStorage.recentlyOpen != null) {
-      recentlyOpen = sessionStorage.recentlyOpen
+    //console.log(localStorage.getItem("recentlyOpen"))
+    if (localStorage.getItem("recentlyOpen") != null) {
+      recentlyOpen = localStorage.getItem("recentlyOpen")
       document.getElementById("recent-lab").style.visibility = "visible"
       let recentlyOpenObj = searchFromPathnameOnDataPathTable(dataPath, recentlyOpen)
       document.getElementById("recent-lab-label").innerHTML = recentlyOpenObj["name"]
@@ -55,7 +55,7 @@ function next() {
       }
       currentPathname = newPathname
     }
-    sessionStorage.recentlyOpen = currentPathname
+    localStorage.setItem("recentlyOpen", currentPathname)
   }
 }
 
