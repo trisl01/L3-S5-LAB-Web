@@ -5,26 +5,78 @@
     <meta charset="utf-8">
     <meta name="author" content="Tristan Loye">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/colors.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./styles/theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./styles/index.css" rel="stylesheet" type="text/css" media="all">
   </head>
-  <body>
+  <body id="index" class="container-flex-column-center">
     <header>
       TI510M - LAB Advanced Web programming - Index
     </header>
-    <div class="section">
+    <nav id="box-lab" class="container-flex-row">
+      <div>
+        <a id="new-lab" class="button-primary fill" href="./">
+          <i class="bi bi-stars"></i>
+          <label id="new-lab-label" class="margin-left-10px"></label>
+        </a>
+        <a id="recent-lab" class="button-secondary fill" href="./" style="visibility: hidden;">
+          <i class="bi bi-clock-history"></i>
+          <label id="recent-lab-label" class="margin-left-10px"></label>
+        </a>
+      </div>
+    </nav>
+    <section>
       <ul>
-        <li><a href="./Labwork-1/">Labwork 1</a></li>
-        <li><a href="./Labwork-2/">Labwork 2</a></li>
-        <li><a href="./Labwork-3/">Labwork 3</a></li>
-        <li><a href="./Labwork-4/">Labwork 4</a></li>
-        <li><a href="./Quick-lab-1/">Quick Lab 1</a></li>
-        <li><a href="./Labwork-5/">Labwork 5</a></li>
-        <li><a href="./Quick-lab-2/">Quick Lab 2</a></li>
+        <li>
+          <a class="button" href="./Labwork-1/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Labwork 1</label>
+          </a>
+          <a class="bi bi-filetype-pdf" href="./Labwork-1/TI510M-Web-Labwork-1.pdf"></a>
+        </li>
+        <li>
+          <a class="button" href="./Labwork-2/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Labwork 2</label>
+          </a>
+          <a class="bi bi-filetype-pdf" href="./Labwork-2/TI510M-Web-Labwork-2.pdf"></a>
+        </li>
+        <li>
+          <a class="button" href="./Labwork-3/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Labwork 3</label>
+          </a>
+          <a class="bi bi-filetype-pdf" href="./Labwork-3/TI510M-Web-Labwork-3.pdf"></a>
+        </li>
+        <li>
+          <a class="button" href="./Labwork-4/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Labwork 4</label>
+          </a>
+          <a class="bi bi-filetype-pdf" href="./Labwork-4/TI510M-Web-Labwork-4.pdf"></a>
+        </li>
+        <li>
+          <a class="button" href="./Quick-lab-1/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Quick Lab 1</label>
+          </a>
+        </li>
+        <li>
+          <a class="button" href="./Labwork-5/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Labwork 5</label>
+          </a>
+          <a class="bi bi-filetype-pdf" href="./Labwork-5/TI510M-Web-Labwork-5.pdf"></a>
+        </li>
+        <li>
+          <a class="button" href="./Quick-lab-2/">
+            <i class="bi bi-arrow-right-circle"></i>
+            <label class="margin-left-10px">Quick Lab 2</label>
+          </a>
+        </li>
       </ul>
-    </div>
+    </section>
     <footer>
-      By Tristan Loye - Efrei L3
+      By Tristan Loye - Efrei L3-S5
     </footer>
     
     <script src="./scripts/app.js"></script>
