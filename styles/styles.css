@@ -63,7 +63,7 @@ button, .button, .button-primary, .button-secondary, .button-error {
   transition: all 0.3s;
 }
 
-a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
+a, a *, button, button *, .button *, .button-primary *, .button-secondary *, .button-error * {
   cursor: pointer;
 }
 
