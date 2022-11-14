@@ -31,7 +31,7 @@ function next() {
   let recentlyOpen
   let currentPathname = pathnameWithoutNameRepo(document.location.pathname)
 
-  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.endsWith(nameRepo + "/") || currentPathname.endsWith(nameRepo + "/index.html")) {
+  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.endsWith(nameRepo + "/") || currentPathname.startsWith(nameRepo + "/index.html")) {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
     document.getElementById("new-lab-label").innerHTML = newLabPath["name"]
     if (currentPathname.startsWith(nameRepo)) {
