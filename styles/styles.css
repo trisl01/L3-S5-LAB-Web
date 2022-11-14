@@ -27,18 +27,20 @@ header {
 }
 
 main, section, nav {
-  margin: 10px;
-  padding: 10px;
   border-radius: 10px;
 }
 
 nav {
+  margin: 5px;
+  padding: 5px;
   font-size: 20px;
 }
 
 main, section {
   background-color: var(--color-surface-variant);
   color: var(--color-on-surface-variant);
+  margin: 10px;
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -60,8 +62,13 @@ button, .button, .button-primary, .button-secondary, .button-error {
   text-decoration: none;
   transition: all 0.3s;
 }
+
 a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
   cursor: pointer;
+}
+
+a.button, a.button-primary, a.button-secondary, a.button-error {
+  text-decoration: none;
 }
 
 #backToIndex a, .little-button {
@@ -200,10 +207,6 @@ a, a label, button label, .button label, .button-primary label, .button-secondar
   justify-content: flex-start;
 }
 
-a.button, a.button-primary, a.button-secondary, a.button-error {
-  text-decoration: none;
-}
-
 .container-flex-row-center {
   display: flex;
   flex-direction: row;
@@ -223,6 +226,20 @@ a.button, a.button-primary, a.button-secondary, a.button-error {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.container-wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container-wrap-row-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
 }
 
 a {
