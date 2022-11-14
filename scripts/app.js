@@ -9,10 +9,17 @@ window.addEventListener( "pageshow", function ( event ) {
 let newLab = "L5"
 let nameRepo = "/L3-S5-LAB-Web/"
 
+let nameJsonPathname = "scripts/pathname.json"
+if (document.location.pathname.startsWith(nameRepo)) {
+  nameJsonPathname = nameRepo + nameJsonPathname
+} else {
+  nameJsonPathname = "/" + nameJsonPathname
+}
+
 let dataPath
 let newLabPath
 
-fetch('./scripts/pathname.json')
+fetch(nameJsonPathname)
   .then((response) => response.json())
   .then(function (data) {
     dataPath = data
