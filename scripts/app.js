@@ -10,7 +10,7 @@ let newLab = "L5"
 let nameRepo = "/L3-S5-LAB-Web/"
 
 let nameJsonPathname = "scripts/pathname.json"
-if (document.location.pathname.startsWith(nameRepo)) {
+if (document.location.pathname.includes(nameRepo)) {
   nameJsonPathname = nameRepo + nameJsonPathname
 } else {
   nameJsonPathname = "/" + nameJsonPathname
@@ -31,7 +31,7 @@ function next() {
   let recentlyOpen
   let currentPathname = pathnameWithoutNameFolder(document.location.pathname)
 
-  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html")) {
+  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.startsWith(nameRepo)) {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
     document.getElementById("new-lab-label").innerHTML = newLabPath["name"]
     document.getElementById("new-lab").setAttribute('href', newLabPath["pathname"])
