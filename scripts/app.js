@@ -29,7 +29,7 @@ fetch(nameJsonPathname)
 
 function next() {
   let recentlyOpen
-  let currentPathname = pathnameWithoutNameFolder(document.location.pathname)
+  let currentPathname = pathnameWithoutNameRepo(document.location.pathname)
 
   if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.endsWith(nameRepo + "/") || currentPathname.endsWith(nameRepo + "/index.html")) {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
@@ -88,16 +88,16 @@ function searchOnDataPathTable(data, search) {
 
 function searchFromPathnameOnDataPathTable(data, pathname) {
   for(key in data) {
-    if(data[key].pathname == pathnameWithoutNameFolder(pathname)) {
+    if(data[key].pathname == pathnameWithoutNameRepo(pathname)) {
       return data[key]
     }
   }
   return null
 }
 
-function pathnameWithoutNameFolder(pathname) {
+function pathnameWithoutNameRepo(pathname) {
   if (pathname == null) {
-    return "/"
+    return ""
   }
   if (pathname.startsWith(nameRepo)) {
     let path = window.location.pathname.split("/")
