@@ -7,13 +7,13 @@ window.addEventListener( "pageshow", function ( event ) {
 })
 
 let newLab = "L5"
-let nameRepo = "/L3-S5-LAB-Web/"
+let nameRepo = "/L3-S5-LAB-Web"
 
-let nameJsonPathname = "scripts/pathname.json"
+let nameJsonPathname = "/scripts/pathname.json"
 if (document.location.pathname.includes(nameRepo)) {
   nameJsonPathname = nameRepo + nameJsonPathname
 } else {
-  nameJsonPathname = "/" + nameJsonPathname
+  nameJsonPathname = nameJsonPathname
 }
 
 let dataPath
@@ -31,36 +31,48 @@ function next() {
   let recentlyOpen
   let currentPathname = pathnameWithoutNameFolder(document.location.pathname)
 
-  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.endsWith(nameRepo) || currentPathname.endsWith(nameRepo + "index.html")) {
+  if (currentPathname.length == 1 || currentPathname.startsWith("/index.html") || currentPathname.endsWith(nameRepo + "/") || currentPathname.endsWith(nameRepo + "/index.html")) {
     newLabPath = searchOnDataPathTable(dataPath, newLab)
     document.getElementById("new-lab-label").innerHTML = newLabPath["name"]
-    document.getElementById("new-lab").setAttribute('href', newLabPath["pathname"])
+    if (currentPathname.startsWith(nameRepo)) {
+      document.getElementById("new-lab").setAttribute('href', nameRepo + newLabPath["pathname"])
+    } else {
+      document.getElementById("new-lab").setAttribute('href', newLabPath["pathname"])  
+    }
     //console.log(localStorage.getItem("recentlyOpen"))
     if (localStorage.getItem("recentlyOpen") != null) {
       recentlyOpen = localStorage.getItem("recentlyOpen")
       document.getElementById("recent-lab").style.visibility = "visible"
       let recentlyOpenObj = searchFromPathnameOnDataPathTable(dataPath, recentlyOpen)
       document.getElementById("recent-lab-label").innerHTML = recentlyOpenObj["name"]
-      document.getElementById("recent-lab").setAttribute('href', recentlyOpenObj["pathname"])
+      if (currentPathname.startsWith(nameRepo)) {
+        document.getElementById("recent-lab").setAttribute('href', nameRepo + recentlyOpenObj["pathname"])
+      } else {
+        document.getElementById("recent-lab").setAttribute('href', recentlyOpenObj["pathname"])
+      }
     } else {
       document.getElementById("recent-lab").style.visibility = "hidden"
     }
   } else {
-    if (currentPathname.endsWith("index.html")) {
+    if (currentPathname.endsWith("/index.html")) {
       let newPathname = currentPathname
       for (let i = 0; i < 100; i++) {
-        if (currentPathname == newPathname && currentPathname.startsWith("/Labwork-"+i+"/")) {
+        if (currentPathname == newPathname && currentPathname.startsWith("/Labwork-"+i+"/") && currentPathname.startsWith(nameRepo + "/Labwork-"+i+"/")) {
           newPathname = "/Labwork-"+i+"/"
         }
       }
       if (currentPathname == newPathname) {
         for (let i = 0; i < 100; i++) {
-          if (currentPathname == newPathname && currentPathname.startsWith("/Quick-lab-"+i+"/")) {
+          if (currentPathname == newPathname && currentPathname.startsWith("/Quick-lab-"+i+"/") && currentPathname.startsWith(nameRepo + "/Quick-lab-"+i+"/")) {
             newPathname = "/Quick-lab-"+i+"/"
           }
         }
       }
       currentPathname = newPathname
+    } else {
+      if (currentPathname.startsWith(nameRepo)) {
+        currentPathname = currentPathname.substring(nameRepo.length)
+      }
     }
     localStorage.setItem("recentlyOpen", currentPathname)
   }
@@ -84,6 +96,9 @@ function searchFromPathnameOnDataPathTable(data, pathname) {
 }
 
 function pathnameWithoutNameFolder(pathname) {
+  if (pathname == null) {
+    return "/"
+  }
   if (pathname.startsWith(nameRepo)) {
     let path = window.location.pathname.split("/")
     let pathnameStr = "/"
