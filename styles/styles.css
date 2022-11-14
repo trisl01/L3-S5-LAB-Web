@@ -226,6 +226,20 @@ a.button, a.button-primary, a.button-secondary, a.button-error {
   justify-content: center;
 }
 
+.container-wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container-wrap-row-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+}
+
 a {
   font-size: 20px;
   box-sizing: border-box;
