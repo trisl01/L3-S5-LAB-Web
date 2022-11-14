@@ -9,7 +9,7 @@ body {
   font-size: 12px;
 }
 
-header, nav, section, main, footer, #backToIndex {
+header, nav, section, .section, main, footer, #backToIndex {
   width: 90%;
   max-width: 900px;
   box-sizing: border-box;
@@ -26,7 +26,7 @@ header {
   font-size: 36px;
 }
 
-main, section, nav {
+main, section, .section, nav {
   border-radius: 10px;
 }
 
@@ -36,7 +36,7 @@ nav {
   font-size: 20px;
 }
 
-main, section {
+main, section, .section {
   background-color: var(--color-surface-variant);
   color: var(--color-on-surface-variant);
   margin: 10px;
@@ -63,7 +63,7 @@ button, .button, .button-primary, .button-secondary, .button-error {
   transition: all 0.3s;
 }
 
-a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
+a, a *, button, button *, .button *, .button-primary *, .button-secondary *, .button-error * {
   cursor: pointer;
 }
 

@@ -13,8 +13,6 @@ section button {
 section input {
   margin-top: 5px;
   padding: 3px;
-  background-color: none;
-  color: default;
   border: none;
   border-radius: 2px;
 }
