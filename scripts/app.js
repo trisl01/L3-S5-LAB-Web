@@ -85,12 +85,6 @@ function searchFromPathnameOnDataPathTable(data, pathname) {
 
 function pathnameWithoutNameRepo(pathname) {
   if (pathname.startsWith(nameRepo)) {
-    /*let path = window.location.pathname.split("/")
-    let pathnameStr = "/"
-    for (let i = 1; i < path.length; i++) {
-      pathnameStr += path[i] + "/"
-    }
-    return pathnameStr*/
     return pathname.substring(nameRepo.length)
   } else {
     return pathname
