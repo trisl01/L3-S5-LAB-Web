@@ -27,18 +27,20 @@ header {
 }
 
 main, section, nav {
-  margin: 10px;
-  padding: 10px;
   border-radius: 10px;
 }
 
 nav {
+  margin: 5px;
+  padding: 5px;
   font-size: 20px;
 }
 
 main, section {
   background-color: var(--color-surface-variant);
   color: var(--color-on-surface-variant);
+  margin: 10px;
+  padding: 10px;
   font-size: 18px;
 }
 
