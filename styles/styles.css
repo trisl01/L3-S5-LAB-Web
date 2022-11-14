@@ -60,8 +60,13 @@ button, .button, .button-primary, .button-secondary, .button-error {
   text-decoration: none;
   transition: all 0.3s;
 }
+
 a, a label, button label, .button label, .button-primary label, .button-secondary label, .button-error label {
   cursor: pointer;
+}
+
+a.button, a.button-primary, a.button-secondary, a.button-error {
+  text-decoration: none;
 }
 
 #backToIndex a, .little-button {
@@ -198,10 +203,6 @@ a, a label, button label, .button label, .button-primary label, .button-secondar
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-}
-
-a.button, a.button-primary, a.button-secondary, a.button-error {
-  text-decoration: none;
 }
 
 .container-flex-row-center {
