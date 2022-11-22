@@ -8,6 +8,7 @@ window.addEventListener( "pageshow", function ( event ) {
 
 let newLab = "L5"
 let nameRepo = "/L3-S5-LAB-Web"
+let errorPath = "/errors"
 
 let nameJsonPathname = "/scripts/pathname.json"
 if (document.location.pathname.includes(nameRepo)) {
@@ -46,23 +47,25 @@ function next() {
       document.getElementById("recent-lab").style.visibility = "hidden"
     }
   } else {
-    if (currentPathname.endsWith("/index.html")) {
-      let newPathname = currentPathname
-      for (let i = 0; i < 100; i++) {
-        if (currentPathname == newPathname && currentPathname.startsWith("/Labwork-"+i+"/")) {
-          newPathname = "/Labwork-"+i+"/"
-        }
-      }
-      if (currentPathname == newPathname) {
+    if (!currentPathname.startsWith(errorPath)) {
+      if (currentPathname.endsWith("/index.html")) {
+        let newPathname = currentPathname
         for (let i = 0; i < 100; i++) {
-          if (currentPathname == newPathname && currentPathname.startsWith("/Quick-lab-"+i+"/")) {
-            newPathname = "/Quick-lab-"+i+"/"
+          if (currentPathname == newPathname && currentPathname.startsWith("/Labwork-"+i+"/")) {
+            newPathname = "/Labwork-"+i+"/"
           }
         }
+        if (currentPathname == newPathname) {
+          for (let i = 0; i < 100; i++) {
+            if (currentPathname == newPathname && currentPathname.startsWith("/Quick-lab-"+i+"/")) {
+              newPathname = "/Quick-lab-"+i+"/"
+            }
+          }
+        }
+        currentPathname = newPathname
       }
-      currentPathname = newPathname
+      localStorage.setItem("recentlyOpen", currentPathname)
     }
-    localStorage.setItem("recentlyOpen", currentPathname)
   }
 }
 
