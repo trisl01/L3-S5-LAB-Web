@@ -271,3 +271,12 @@ a:hover {
   margin-left: 20px;
 }
 
+#error-page main {
+  font-size: 25px;
+}
+
+#error-page main img {
+  max-width: 300px;
+  width: 90%;
+  margin-top: 20px;
+}
