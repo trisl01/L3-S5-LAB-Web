@@ -24,8 +24,8 @@
 
     <main class="container-flex-column-center">
       <div id="form-slider" class="container-flex-row">
-        <input type="number" min="1" max="1000" name="number-range" id="number-range">
-        <input type="range" min="1" max="1000" value="20" id="slider-range">
+        <input type="number" min="1" max="100" name="number-range" id="number-range">
+        <input type="range" min="1" max="100" value="20" id="slider-range">
       </div>
       <div id="users-container" class="container-flex-column-center">Loading...</div>
     </main>
@@ -75,7 +75,7 @@
           document.getElementById("users-container").innerHTML = "Loading " + numberOfUsers + " users..."
         }
         //? Fetch the API to get the JSON
-        fetch("https://randomuser.me/api/?nat=ca&results=" + 1000)
+        fetch("https://randomuser.me/api/?nat=ca&results=" + 100)
           .then((response) => response.json())
           .then(function (data) {
             console.log(data)
