@@ -24,8 +24,8 @@
 
     <main class="container-flex-column-center">
       <div id="form-slider" class="container-flex-row">
-        <input type="number" name="number-range" id="number-range">
-        <input type="range" min="1" max="1000" value="20" id="slider-range">
+        <input type="number" min="1" max="100" name="number-range" id="number-range">
+        <input type="range" min="1" max="100" value="20" id="slider-range">
       </div>
       <div id="users-container" class="container-flex-column-center">Loading...</div>
     </main>
@@ -39,8 +39,6 @@
       let slider = document.getElementById("slider-range")
       let number = document.getElementById("number-range")
       number.value = slider.value
-      number.min = slider.min
-      number.max = slider.max
 
       //? Update the content when change input
       slider.oninput = function() {
@@ -77,7 +75,7 @@
           document.getElementById("users-container").innerHTML = "Loading " + numberOfUsers + " users..."
         }
         //? Fetch the API to get the JSON
-        fetch("https://randomuser.me/api/?nat=ca&results=" + 1000)
+        fetch("https://randomuser.me/api/?nat=ca&results=" + 100)
           .then((response) => response.json())
           .then(function (data) {
             console.log(data)
