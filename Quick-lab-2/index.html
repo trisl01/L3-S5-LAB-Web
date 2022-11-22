@@ -22,68 +22,127 @@
 
     <div id="error-container" class="container-flex-column-center"></div>
 
-    <main id="users-container" class="container-flex-column-center">Loading...</main>
+    <main class="container-flex-column-center">
+      <div id="form-slider" class="container-flex-row">
+        <input type="number" name="number-range" id="number-range">
+        <input type="range" min="1" max="1000" value="20" id="slider-range">
+      </div>
+      <div id="users-container" class="container-flex-column-center">Loading...</div>
+    </main>
 
     <footer>
       Copyright © 2022 Tristan Loye - All rights reserved
     </footer>
 
     <script>
-      //? Settings
-      const numberOfUsers = 5000;
+      //? Charge when open page
+      let slider = document.getElementById("slider-range")
+      let number = document.getElementById("number-range")
+      number.value = slider.value
+      number.min = slider.min
+      number.max = slider.max
 
-      //? Fetch the API to get the JSON
-      fetch("https://randomuser.me/api/?nat=ca&results=" + numberOfUsers)
-        .then((response) => response.json())
-        .then(function (data) {
-          console.log(data)
+      //? Update the content when change input
+      slider.oninput = function() {
+        number.value = this.value
+        displayNUsers(this.value)
+      }
+      number.oninput = function() {
+        slider.value = this.value
+        displayNUsers(this.value)
+      }
 
-          document.getElementById("users-container").innerHTML = ""
-
-          if (data.error == null) {
-            //? Get the table of users
-            let dataUser = data.results
-
-            //? Create a new <div> to put every users in
-            let newBlock = document.createElement('div')
-            newBlock.classList = "block-users"
-            newBlock.id = "users-wrap"
-            document.getElementById("users-container").appendChild(newBlock)
-
-            //? Add every users inside the JSON
-            for (let i = 0; i < dataUser.length; i++) {
-              addUser(dataUser[i])
-            }
-          } else {
-            //? If you refresh a lot you have a warning from the API
-            let newErrorJson = document.createElement('code')
-            newErrorJson.innerHTML = "<u><b>API respond:</b></u><br>" + data.error
-            document.getElementById("error-container").appendChild(newErrorJson)
-            document.getElementById("error-container").classList.add("error-json")
-            document.getElementById("users-container").style.visibility = "hidden"
-          }
-        })
-
-        function addUser(dataUser) {
-          //? Create a new user
-          const newUser = document.createElement('div')
-          newUser.classList = "user"
-
-          const newUserPicture = document.createElement('div')
-          newUserPicture.classList = "user-picture"
-          //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].thumbnail+"')"
-          newUserPicture.style.backgroundImage = "url('"+dataUser["picture"].medium+"')"
-          //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].large+"')"
-          
-          const newUserName = document.createElement('div')
-          newUserName.classList = "user-name"
-          newUserName.textContent = dataUser["name"].first + " " + dataUser["name"].last
-
-          newUser.append(newUserPicture, newUserName)
-
-          //? Add to the main <div>
-          document.getElementById("users-wrap").appendChild(newUser)
+      //? Update the content when press arrow key
+      document.body.addEventListener("keydown", function (event) {
+        if (event.key == "ArrowRight" || event.key == "ArrowUp") {
+          slider.value++
+          number.value++
+          displayNUsers(slider.value)
+        } else if (event.key == "ArrowLeft" || event.key == "ArrowDown") {
+          slider.value--
+          number.value--
+          displayNUsers(slider.value)
         }
+      })
+
+      //? Variables
+      let dataUser
+
+      getJsonAPI(slider.value)
+
+      function getJsonAPI(numberOfUsers) {
+        if (numberOfUsers == 1) {
+          document.getElementById("users-container").innerHTML = "Loading " + numberOfUsers + " user..."
+        } else {
+          document.getElementById("users-container").innerHTML = "Loading " + numberOfUsers + " users..."
+        }
+        //? Fetch the API to get the JSON
+        fetch("https://randomuser.me/api/?nat=ca&results=" + 1000)
+          .then((response) => response.json())
+          .then(function (data) {
+            console.log(data)
+
+            document.getElementById("users-container").innerHTML = ""
+
+            if (data.error == null) {
+              //? Get the table of users
+              dataUser = data.results
+
+              //? Create a new <div> to put every users in
+              let newBlock = document.createElement('div')
+              newBlock.classList = "block-users"
+              newBlock.id = "users-wrap"
+              document.getElementById("users-container").appendChild(newBlock)
+
+              //? Add every users inside the JSON
+              /*for (let i = 0; i < dataUser.length; i++) {
+                addUser(dataUser[i])
+              }*/
+
+              //? Display only the number require
+              displayNUsers(numberOfUsers)
+            } else {
+              //? If you refresh a lot you have a warning from the API
+              let newErrorJson = document.createElement('code')
+              newErrorJson.innerHTML = "<u><b>API respond:</b></u><br>" + data.error
+              document.getElementById("error-container").appendChild(newErrorJson)
+              document.getElementById("error-container").classList.add("error-json")
+              document.getElementById("users-container").style.visibility = "hidden"
+            }
+          })
+      }
+
+      function addUser(dataUser) {
+        //? Create a new user
+        const newUser = document.createElement('div')
+        newUser.classList = "user"
+
+        const newUserPicture = document.createElement('div')
+        newUserPicture.classList = "user-picture"
+        //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].thumbnail+"')"
+        newUserPicture.style.backgroundImage = "url('"+dataUser["picture"].medium+"')"
+        //newUserImage.style.backgroundImage = "url('"+dataUser["picture"].large+"')"
+        
+        const newUserName = document.createElement('div')
+        newUserName.classList = "user-name"
+        newUserName.textContent = dataUser["name"].first + " " + dataUser["name"].last
+
+        newUser.append(newUserPicture, newUserName)
+
+        //? Add to the main <div>
+        document.getElementById("users-wrap").appendChild(newUser)
+      }
+
+      function displayNUsers(numberOfUsers) {
+        hiddenAllUsers()
+        for (let i = 0; i < numberOfUsers; i++) {
+          addUser(dataUser[i])
+        }
+      }
+
+      function hiddenAllUsers() {
+        document.getElementById("users-wrap").innerHTML = ""
+      }
     </script>
     <script src="../scripts/app.js"></script>
   </body>
