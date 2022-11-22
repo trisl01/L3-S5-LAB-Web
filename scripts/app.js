@@ -47,7 +47,7 @@ function next() {
       document.getElementById("recent-lab").style.visibility = "hidden"
     }
   } else {
-    if (!currentPathname.startsWith(errorPath)) {
+    if (!currentPathname.startsWith(errorPath) && searchFromPathnameOnDataPathTable(dataPath, currentPathname) != null) {
       if (currentPathname.endsWith("/index.html")) {
         let newPathname = currentPathname
         for (let i = 0; i < 100; i++) {
