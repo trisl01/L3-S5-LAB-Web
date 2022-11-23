@@ -142,3 +142,39 @@ app.get('/redirect', (req, res) => {
 app.get('/apple', (req, res) => {
     res.redirect('https://www.apple.com/'); // Going to another website
 });
+
+
+//! ---------------------------------------------
+//?  Route Chaining
+//! ---------------------------------------------
+
+//? Boring way:
+
+// URL => http://localhost:3000/crud
+app.get('/crud', (req, res) => {
+    res.send('Practising .get() HTTP method for "Read/Retrieve"');
+});
+app.post("/crud", (req, res) => {
+    res.send('Practising .post() HTTP method for "Create"');
+});
+app.put("/crud", (req, res) => {
+    res.send('Practising .put() HTTP method for "Update"');
+});
+app.delete("/crud", (req, res) => {
+    res.send('Practising .delete() HTTP method for "Delete"');
+});
+
+
+//? Best way:
+
+// URL => http://localhost:3000/book
+app.route('/book')
+  .get((req, res) => {
+    res.send('Retrieve a book [READ] using .get() HTTP method');
+  })
+  .post((req, res) => {
+    res.send('Add a book [CREATE] using .post() HTTP method');
+  })
+  .put((req, res) => {
+  res.send('Update the book [UPDATE] using .post() HTTP method');
+})
