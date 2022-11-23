@@ -178,3 +178,18 @@ app.route('/book')
   .put((req, res) => {
   res.send('Update the book [UPDATE] using .post() HTTP method');
 })
+
+
+//! ---------------------------------------------
+//?  Express Static
+//! ---------------------------------------------
+
+/*
+http://localhost:3000/img/dish1.jpg
+http://localhost:3000/img/dish2.jpg
+http://localhost:3000/img/dish3.jpg
+*/
+app.use(express.static('public'));
+
+// Example1: http://localhost:3000/img/dish1.jpg
+app.use('/img', express.static('img'));
