@@ -85,3 +85,6 @@ A simple website of two pages only for handling the user input using HTML form e
 
 ## Quick Lab 2 - Fetch JSON with API
 [Link to the Quick Lab 2](https://trisl01.github.io/L3-S5-LAB-Web/Quick-lab-2)
+
+## Quick Lab 3 - Node.js and Express
+[Link to the Quick Lab 3](https://trisl01.github.io/L3-S5-LAB-Web/Quick-lab-3)
