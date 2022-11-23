@@ -213,3 +213,17 @@ app.post("/prop", (req, res) => {
     console.log(req.body);
     res.send(req.body);
 });
+
+
+//! ---------------------------------------------
+//?  Error Functions
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/
+app.get('/', (req, res) => {
+    throw new Error();
+});
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
