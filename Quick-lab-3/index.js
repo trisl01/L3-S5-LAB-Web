@@ -193,3 +193,23 @@ app.use(express.static('public'));
 
 // Example1: http://localhost:3000/img/dish1.jpg
 app.use('/img', express.static('img'));
+
+
+//! ---------------------------------------------
+//?  Properties Requests
+//! ---------------------------------------------
+
+//? 2 methods:
+//app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+//? Inside the Request:
+//? - For express.json: add to "Body"->"Json": {"test":"value"}
+//? - For express.urlencoded: add to "Body"->"Form-encode": "repo" ""Our JSON Object Property Value""
+
+// URL: http://localhost:3000/prop
+app.post("/prop", (req, res) => {
+    //? With app.use(express.json()) : re
+    console.log(req.body);
+    res.send(req.body);
+});
