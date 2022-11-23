@@ -93,3 +93,17 @@ app.put("/update", (req, res) => {
 app.delete("/delete", (req, res) => {
     res.send('Practising .delete() HTTP method for "Delete"');
 });
+
+
+//! ---------------------------------------------
+//?  Call next response
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/next 
+app.get("/next", (req, res, next) => {
+    console.log("Practising next() function as the first response (first route callback)!");
+    next(); 
+  }, (req, res) => {
+    res.send("Practising next() function as the second and last response (second route callback)!");
+    console.log("Practising next() function as the second and last response (second route callback)!");
+});
