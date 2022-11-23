@@ -6,7 +6,7 @@ window.addEventListener( "pageshow", function ( event ) {
   }
 })
 
-let newLab = "L5"
+let newLab = "QL3"
 let nameRepo = "/L3-S5-LAB-Web"
 let errorPath = "/errors"
 
