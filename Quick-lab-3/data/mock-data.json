@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "first_name": "Bogey",
+        "last_name": "Stiegers",
+        "email": "bstiegers0@wsj.com",
+        "gender": "Male",
+        "job_title": "Chief Design Engineer"
+    },
+    {
+        "id": 2,
+        "first_name": "Elbert",
+        "last_name": "Catonnet",
+        "email": "ecatonnet1@reference.com",
+        "gender": "Male",
+        "job_title": "General Manager"
+    },
+    {
+        "id": 3,
+        "first_name": "Geoffry",
+        "last_name": "Cordery",
+        "email": "gcordery2@umich.edu",
+        "gender": "Genderqueer",
+        "job_title": "Mechanical Systems Engineer"
+    },
+    {
+        "id": 4,
+        "first_name": "Bronny",
+        "last_name": "Layborn",
+        "email": "blayborn3@arstechnica.com",
+        "gender": "Non-binary",
+        "job_title": "Sales Representative"
+    },
+    {
+        "id": 5,
+        "first_name": "Marten",
+        "last_name": "Tregust",
+        "email": "mtregust4@weather.com",
+        "gender": "Male",
+        "job_title": "Environmental Tech"
+    },
+    {
+        "id": 6,
+        "first_name": "Toddie",
+        "last_name": "Rawlcliffe",
+        "email": "trawlcliffe5@e-recht24.de",
+        "gender": "Male",
+        "job_title": "Accountant III"
+    },
+    {
+        "id": 7,
+        "first_name": "Lynna",
+        "last_name": "Dugood",
+        "email": "ldugood6@rakuten.co.jp",
+        "gender": "Female",
+        "job_title": "Structural Analysis Engineer"
+    },
+    {
+        "id": 8,
+        "first_name": "Ned",
+        "last_name": "Minshall",
+        "email": "nminshall7@imgur.com",
+        "gender": "Male",
+        "job_title": "Office Assistant I"
+    },
+    {
+        "id": 9,
+        "first_name": "Felisha",
+        "last_name": "Toupe",
+        "email": "ftoupe8@comcast.net",
+        "gender": "Female",
+        "job_title": "Information Systems Manager"
+    },
+    {
+        "id": 10,
+        "first_name": "Leonora",
+        "last_name": "Willishire",
+        "email": "lwillishire9@toplist.cz",
+        "gender": "Female",
+        "job_title": "Computer Systems Analyst I"
+    },
+    {
+        "id": 11,
+        "first_name": "Janith",
+        "last_name": "Jiroutek",
+        "email": "jjirouteka@eventbrite.com",
+        "gender": "Female",
+        "job_title": "Registered Nurse"
+    },
+    {
+        "id": 12,
+        "first_name": "Timmi",
+        "last_name": "Carnew",
+        "email": "tcarnewb@xrea.com",
+        "gender": "Female",
+        "job_title": "Technical Writer"
+    },
+    {
+        "id": 13,
+        "first_name": "Roderic",
+        "last_name": "Batcock",
+        "email": "rbatcockc@friendfeed.com",
+        "gender": "Male",
+        "job_title": "Staff Scientist"
+    },
+    {
+        "id": 14,
+        "first_name": "Xerxes",
+        "last_name": "Keedwell",
+        "email": "xkeedwelld@ebay.co.uk",
+        "gender": "Male",
+        "job_title": "Financial Advisor"
+    },
+    {
+        "id": 15,
+        "first_name": "Gabbie",
+        "last_name": "Philbin",
+        "email": "gphilbine@tripod.com",
+        "gender": "Male",
+        "job_title": "Chemical Engineer"
+    },
+    {
+        "id": 16,
+        "first_name": "Eden",
+        "last_name": "Cohr",
+        "email": "ecohrf@themeforest.net",
+        "gender": "Female",
+        "job_title": "Executive Secretary"
+    },
+    {
+        "id": 17,
+        "first_name": "Gottfried",
+        "last_name": "Colebeck",
+        "email": "gcolebeckg@ycombinator.com",
+        "gender": "Male",
+        "job_title": "Nuclear Power Engineer"
+    },
+    {
+        "id": 18,
+        "first_name": "Chane",
+        "last_name": "de Banke",
+        "email": "cdebankeh@google.com.hk",
+        "gender": "Male",
+        "job_title": "Health Coach II"
+    },
+    {
+        "id": 19,
+        "first_name": "Meta",
+        "last_name": "Swett",
+        "email": "mswetti@imageshack.us",
+        "gender": "Female",
+        "job_title": "Administrative Assistant III"
+    },
+    {
+        "id": 20,
+        "first_name": "Maxie",
+        "last_name": "McOrkill",
+        "email": "mmcorkillj@reverbnation.com",
+        "gender": "Female",
+        "job_title": "Office Assistant III"
+    },
+    {
+        "id": 21,
+        "first_name": "Jena",
+        "last_name": "McDowall",
+        "email": "jmcdowallk@bloglines.com",
+        "gender": "Genderfluid",
+        "job_title": "Software Engineer III"
+    },
+    {
+        "id": 22,
+        "first_name": "Chery",
+        "last_name": "Gietz",
+        "email": "cgietzl@ning.com",
+        "gender": "Female",
+        "job_title": "Product Engineer"
+    },
+    {
+        "id": 23,
+        "first_name": "Read",
+        "last_name": "Cathel",
+        "email": "rcathelm@google.ca",
+        "gender": "Male",
+        "job_title": "Accounting Assistant I"
+    },
+    {
+        "id": 24,
+        "first_name": "Belvia",
+        "last_name": "Forsaith",
+        "email": "bforsaithn@hao123.com",
+        "gender": "Female",
+        "job_title": "Software Consultant"
+    },
+    {
+        "id": 25,
+        "first_name": "Eddie",
+        "last_name": "Coviello",
+        "email": "ecovielloo@rakuten.co.jp",
+        "gender": "Female",
+        "job_title": "Accounting Assistant III"
+    },
+    {
+        "id": 26,
+        "first_name": "Gusti",
+        "last_name": "Totman",
+        "email": "gtotmanp@liveinternet.ru",
+        "gender": "Female",
+        "job_title": "VP Quality Control"
+    },
+    {
+        "id": 27,
+        "first_name": "Adoree",
+        "last_name": "Beaulieu",
+        "email": "abeaulieuq@pagesperso-orange.fr",
+        "gender": "Agender",
+        "job_title": "Marketing Assistant"
+    },
+    {
+        "id": 28,
+        "first_name": "Sutherlan",
+        "last_name": "Greve",
+        "email": "sgrever@behance.net",
+        "gender": "Male",
+        "job_title": "Nurse Practicioner"
+    },
+    {
+        "id": 29,
+        "first_name": "Hobie",
+        "last_name": "Morfett",
+        "email": "hmorfetts@businessweek.com",
+        "gender": "Male",
+        "job_title": "Food Chemist"
+    },
+    {
+        "id": 30,
+        "first_name": "Bayard",
+        "last_name": "Graalman",
+        "email": "bgraalmant@goo.gl",
+        "gender": "Male",
+        "job_title": "Mechanical Systems Engineer"
+    }
+]

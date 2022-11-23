@@ -1,0 +1,16 @@
+{
+  "name": "quick-lab-3",
+  "version": "1.0.0",
+  "description": "TI510M - Quick Lab 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --experimental-json-modules"
+  },
+  "author": "Tristan LOYE",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "type": "module"
+}
