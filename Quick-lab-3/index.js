@@ -127,3 +127,18 @@ app.get('/file', (req, res) => {
 app.get('/status', (req, res) => {
     res.sendStatus(404); // Not Found
 });
+
+
+//! ---------------------------------------------
+//?  Redirection
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/redirect
+app.get('/redirect', (req, res) => {
+    res.redirect('https://expressjs.com/'); // Going to another website
+});
+
+// URL => http://localhost:3000/apple
+app.get('/apple', (req, res) => {
+    res.redirect('https://www.apple.com/'); // Going to another website
+});
