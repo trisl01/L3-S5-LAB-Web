@@ -73,3 +73,13 @@ app.get("/workers/:id/", (req, res) => {
 app.post("/create", (req, res) => {
     res.send('Practising .post() HTTP method for "Create"');
 });
+
+
+//! ---------------------------------------------
+//?  PUT Requests
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/update
+app.put("/update", (req, res) => {
+    res.send('Practising .put() HTTP method for "Update"');
+});
