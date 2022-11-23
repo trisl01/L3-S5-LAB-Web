@@ -107,3 +107,13 @@ app.get("/next", (req, res, next) => {
     res.send("Practising next() function as the second and last response (second route callback)!");
     console.log("Practising next() function as the second and last response (second route callback)!");
 });
+
+
+//! ---------------------------------------------
+//?  Download file
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/file
+app.get('/file', (req, res) => {
+    res.download('data/info.txt');
+});
