@@ -63,3 +63,13 @@ app.get("/workers/:id/", (req, res) => {
     const worker = data.filter((element) => element.id === workerId);
     res.send(worker);
 });
+
+
+//! ---------------------------------------------
+//?  POST Requests
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/create
+app.post("/create", (req, res) => {
+    res.send('Practising .post() HTTP method for "Create"');
+});
