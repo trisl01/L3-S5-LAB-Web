@@ -117,3 +117,13 @@ app.get("/next", (req, res, next) => {
 app.get('/file', (req, res) => {
     res.download('data/info.txt');
 });
+
+
+//! ---------------------------------------------
+//?  Status page
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/status
+app.get('/status', (req, res) => {
+    res.sendStatus(404); // Not Found
+});
