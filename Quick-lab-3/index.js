@@ -83,3 +83,13 @@ app.post("/create", (req, res) => {
 app.put("/update", (req, res) => {
     res.send('Practising .put() HTTP method for "Update"');
 });
+
+
+//! ---------------------------------------------
+//?  DELETE Requests
+//! ---------------------------------------------
+
+// URL => http://localhost:3000/delete
+app.delete("/delete", (req, res) => {
+    res.send('Practising .delete() HTTP method for "Delete"');
+});
