@@ -66,5 +66,9 @@
   "QL2": {
     "name": "Quick Lab 2",
     "pathname": "/Quick-lab-2/"
+  },
+  "QL3": {
+    "name": "Quick Lab 3",
+    "pathname": "/Quick-lab-3/"
   }
 }
